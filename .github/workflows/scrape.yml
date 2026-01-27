@@ -1,22 +1,29 @@
 name: Campaign Scraper
+
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.9'
+          
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install -r requirements.txt
+        
       - name: Run scraping script
         run: python scraper.py
+        
       - name: Commit and Push results
         run: |
           git config --local user.email "action@github.com"
@@ -24,3 +31,25 @@ jobs:
           git add campaign_data.json
           git commit -m "Update data" || exit 0
           git push
+```
+
+4. 下にスクロールして **「Commit changes」** をクリック
+
+---
+
+### **ステップ2: scraper.py を確認**
+
+1. GitHubで `scraper.py` を開く
+2. ファイルがあることを確認
+3. もしない場合は、ダウンロードしたファイルをアップロード
+
+---
+
+### **ステップ3: requirements.txt を確認**
+
+1. GitHubで `requirements.txt` を開く
+2. 中身が以下になっているか確認：
+```
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
