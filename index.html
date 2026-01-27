@@ -1,0 +1,3103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カッパ整体院 全店舗キャンペーン追跡</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #1e7ba0;
+      --secondary: #26c485;
+      --danger: #e63946;
+      --warning: #f77f00;
+      --bg: #0a1929;
+      --card-bg: #132f4c;
+      --text: #e7eff6;
+      --text-dim: #8fadc7;
+      --border: #1e3a5f;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: linear-gradient(135deg, #0a1929 0%, #132f4c 100%);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body.logged-out {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .login-container {
+      display: none;
+      width: 100%;
+      max-width: 450px;
+      padding: 20px;
+    }
+
+    body.logged-out .login-container {
+      display: block;
+    }
+
+    body.logged-out .main-content {
+      display: none;
+    }
+
+    .login-card {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      animation: slideUp 0.5s ease-out;
+    }
+
+    .login-header {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .login-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .login-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-dim);
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .login-input {
+      width: 100%;
+      padding: 14px 18px;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      color: var(--text);
+      font-size: 1rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    .login-input:focus {
+      outline: none;
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 3px rgba(38, 196, 133, 0.2);
+    }
+
+    .login-btn {
+      padding: 14px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 10px;
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(38, 196, 133, 0.4);
+    }
+
+    .login-error {
+      background: rgba(230, 57, 70, 0.2);
+      border: 2px solid var(--danger);
+      border-radius: 10px;
+      padding: 12px;
+      color: var(--danger);
+      font-size: 0.9rem;
+      text-align: center;
+      display: none;
+    }
+
+    .login-error.show {
+      display: block;
+      animation: shake 0.5s;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-10px); }
+      75% { transform: translateX(10px); }
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .user-name {
+      flex: 1;
+      font-weight: 700;
+      color: var(--secondary);
+      min-width: 150px;
+    }
+
+    .logout-btn {
+      padding: 8px 16px;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .logout-btn:hover {
+      border-color: var(--danger);
+      color: var(--danger);
+    }
+
+    .settings-btn {
+      padding: 8px 16px;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .settings-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .filter-apply-btn {
+      padding: 12px 30px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .filter-apply-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(38, 196, 133, 0.4);
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(38, 196, 133, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(30, 123, 160, 0.15) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeInDown 0.8s ease-out;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 30px rgba(38, 196, 133, 0.3);
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-dim);
+      font-weight: 400;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.8s ease-out 0.2s backwards;
+    }
+
+    .tab {
+      padding: 12px 24px;
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      color: var(--text-dim);
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .tab:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .tab.active {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-color: var(--secondary);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(38, 196, 133, 0.3);
+    }
+
+    .view-toggle {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+      justify-content: center;
+      animation: fadeInUp 0.8s ease-out 0.3s backwards;
+    }
+
+    .view-btn {
+      padding: 12px 30px;
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      color: var(--text-dim);
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .view-btn.active {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-color: var(--secondary);
+      color: white;
+    }
+
+    .filter-section {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 30px;
+      animation: fadeInUp 0.8s ease-out 0.4s backwards;
+    }
+
+    .filter-title {
+      font-size: 1rem;
+      font-weight: 900;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 15px;
+    }
+
+    .filter-groups {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .filter-group-label {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .filter-buttons {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 8px 16px;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .filter-btn.active {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-color: var(--secondary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .filter-btn.expired.active {
+      background: var(--danger);
+      border-color: var(--danger);
+    }
+
+    .filter-btn.updated.active {
+      background: linear-gradient(135deg, var(--warning), #fcbf49);
+      border-color: var(--warning);
+      color: var(--bg);
+    }
+
+    .filter-btn.needs-check.active {
+      background: var(--border);
+      border-color: var(--text-dim);
+    }
+
+    .filter-count {
+      font-size: 0.75rem;
+      opacity: 0.8;
+      margin-left: 4px;
+    }
+
+    .store-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 25px;
+      animation: fadeInUp 0.8s ease-out 0.6s backwards;
+    }
+
+    .store-card {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 20px;
+      padding: 25px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .store-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .store-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+      border-color: var(--secondary);
+    }
+
+    .store-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .store-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      margin-bottom: 20px;
+    }
+
+    .store-name {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--text);
+      letter-spacing: 1px;
+    }
+
+    .store-region {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      background: var(--bg);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .store-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      background: var(--bg);
+      border-radius: 10px;
+    }
+
+    .info-label {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .info-value {
+      font-size: 1.1rem;
+      font-weight: 900;
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .info-value.date {
+      color: var(--primary);
+    }
+
+    .info-value.slots {
+      color: var(--secondary);
+    }
+
+    .info-value.na {
+      color: var(--text-dim);
+      font-style: italic;
+    }
+
+    .store-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .store-btn {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn-update {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+    }
+
+    .btn-update:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(38, 196, 133, 0.4);
+    }
+
+    .btn-history {
+      background: var(--bg);
+      color: var(--text);
+      border: 2px solid var(--border);
+    }
+
+    .btn-history:hover {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .status-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      padding: 6px 12px;
+      border-radius: 15px;
+      font-size: 0.7rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .badge-updated {
+      background: linear-gradient(135deg, var(--warning), #fcbf49);
+      color: var(--bg);
+    }
+
+    .badge-no-data {
+      background: var(--border);
+      color: var(--text-dim);
+    }
+
+    .badge-expired {
+      background: var(--danger);
+      color: white;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.7;
+      }
+    }
+
+    .info-value.expired {
+      color: var(--danger) !important;
+      font-weight: 900;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(10, 25, 41, 0.95);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 20px;
+      padding: 35px;
+      max-width: 500px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      animation: slideUp 0.3s ease-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .modal-title {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--text);
+      letter-spacing: 1px;
+    }
+
+    .close-btn {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      color: var(--text-dim);
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .close-btn:hover {
+      border-color: var(--danger);
+      color: var(--danger);
+      transform: rotate(90deg);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 14px 18px;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      color: var(--text);
+      font-size: 1rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 3px rgba(38, 196, 133, 0.2);
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .modal-btn {
+      flex: 1;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .history-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .history-item {
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 15px;
+    }
+
+    .history-date {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      margin-bottom: 10px;
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .history-details {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .history-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+    }
+
+    .schedule-section {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      animation: fadeInUp 0.8s ease-out 0.2s backwards;
+    }
+
+    .schedule-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--border);
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .schedule-title {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .schedule-toggle {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 60px;
+      height: 30px;
+      background: var(--border);
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .toggle-switch.active {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+    }
+
+    .toggle-slider {
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 24px;
+      height: 24px;
+      background: white;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .toggle-switch.active .toggle-slider {
+      left: 33px;
+    }
+
+    .toggle-label {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-dim);
+    }
+
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .schedule-input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .schedule-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .day-selector {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 8px;
+    }
+
+    .day-btn {
+      padding: 10px 6px;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .day-btn.selected {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-color: var(--secondary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .day-btn:hover:not(.selected) {
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .next-check-info {
+      background: rgba(38, 196, 133, 0.1);
+      border: 2px solid var(--secondary);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      align-items: center;
+    }
+
+    .next-check-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .next-check-label {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .next-check-value {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--secondary);
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .check-all-btn {
+      background: linear-gradient(135deg, var(--warning), #fcbf49);
+      color: var(--bg);
+      padding: 14px 30px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      justify-self: end;
+    }
+
+    .check-all-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(247, 127, 0, 0.4);
+    }
+
+    .store-management {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      animation: fadeInUp 0.8s ease-out 0.3s backwards;
+    }
+
+    .management-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .management-title {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .add-store-btn {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .add-store-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(38, 196, 133, 0.4);
+    }
+
+    .store-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .store-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px;
+      background: var(--bg);
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .store-item:hover {
+      border-color: var(--primary);
+    }
+
+    .store-item.inactive {
+      opacity: 0.5;
+      background: rgba(19, 47, 76, 0.5);
+    }
+
+    .store-item-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .store-item-name {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    .store-item-url {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-family: monospace;
+      word-break: break-all;
+    }
+
+    .store-item-region {
+      display: inline-block;
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      background: var(--card-bg);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      width: fit-content;
+    }
+
+    .store-item-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .store-item-btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn-toggle {
+      background: var(--warning);
+      color: var(--bg);
+    }
+
+    .btn-toggle:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(247, 127, 0, 0.4);
+    }
+
+    .btn-edit {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-edit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(30, 123, 160, 0.4);
+    }
+
+    .btn-delete {
+      background: var(--danger);
+      color: white;
+    }
+
+    .btn-delete:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(230, 57, 70, 0.4);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .summary-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+      animation: fadeInUp 0.8s ease-out 0.5s backwards;
+    }
+
+    .stat-card {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 16px;
+      padding: 25px;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .stat-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      border-color: var(--secondary);
+    }
+
+    .stat-card:active {
+      transform: translateY(-3px);
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--secondary);
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .loading-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(10, 25, 41, 0.95);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+    }
+
+    .loading-overlay.active {
+      display: flex;
+    }
+
+    .loading-content {
+      text-align: center;
+    }
+
+    .spinner {
+      width: 60px;
+      height: 60px;
+      border: 4px solid var(--border);
+      border-top-color: var(--secondary);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .loading-text {
+      font-size: 1.2rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .tabs {
+        justify-content: center;
+      }
+
+      .store-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .modal-content {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <div class="login-logo">カッパ整体院</div>
+        <div class="login-subtitle">全店舗管理システム</div>
+      </div>
+      <div class="login-error" id="loginError">
+        ユーザー名またはパスワードが正しくありません
+      </div>
+      <form class="login-form" onsubmit="handleLogin(event)">
+        <input type="text" class="login-input" id="loginUsername" placeholder="ユーザー名" required>
+        <input type="password" class="login-input" id="loginPassword" placeholder="パスワード" required>
+        <button type="submit" class="login-btn">ログイン</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      <div class="user-info">
+        <div class="user-name">👤 <span id="currentUsername"></span></div>
+        <button class="settings-btn" onclick="generateTestData()">🧪 テストデータ生成</button>
+        <button class="settings-btn" onclick="clearTestData()">🗑️ データクリア</button>
+        <button class="settings-btn" onclick="openSettingsModal()">⚙️ 設定</button>
+        <button class="logout-btn" onclick="handleLogout()">ログアウト</button>
+      </div>
+
+      <header>
+        <h1>カッパ整体院 全店舗管理</h1>
+        <p class="subtitle">全国の店舗キャンペーンを一括管理</p>
+      </header>
+
+    <div class="schedule-section">
+      <div class="schedule-header">
+        <div class="schedule-title">🕐 定期チェック設定</div>
+        <div class="schedule-toggle">
+          <span class="toggle-label" id="toggleLabel">オフ</span>
+          <div class="toggle-switch" id="scheduleToggle" onclick="toggleSchedule()">
+            <div class="toggle-slider"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-grid">
+        <div class="schedule-input-group">
+          <label class="schedule-label">チェックする曜日（複数選択可）</label>
+          <div class="day-selector">
+            <div class="day-btn" data-day="0" onclick="toggleDay(0)">日</div>
+            <div class="day-btn selected" data-day="1" onclick="toggleDay(1)">月</div>
+            <div class="day-btn" data-day="2" onclick="toggleDay(2)">火</div>
+            <div class="day-btn selected" data-day="3" onclick="toggleDay(3)">水</div>
+            <div class="day-btn" data-day="4" onclick="toggleDay(4)">木</div>
+            <div class="day-btn selected" data-day="5" onclick="toggleDay(5)">金</div>
+            <div class="day-btn" data-day="6" onclick="toggleDay(6)">土</div>
+          </div>
+        </div>
+
+        <div class="schedule-input-group">
+          <label class="schedule-label" for="checkTime">チェック時刻</label>
+          <input type="time" id="checkTime" value="09:00">
+        </div>
+
+        <div class="schedule-input-group">
+          <label class="schedule-label" for="checkInterval">チェック間隔</label>
+          <select id="checkInterval">
+            <option value="7">毎週（7日ごと）</option>
+            <option value="14">2週間ごと</option>
+            <option value="30">毎月（30日ごと）</option>
+            <option value="3">3日ごと</option>
+            <option value="1">毎日</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="next-check-info">
+        <div class="next-check-item">
+          <div class="next-check-label">次回チェック予定</div>
+          <div class="next-check-value" id="nextCheckTime">スケジュールを有効にしてください</div>
+        </div>
+        <div class="next-check-item">
+          <div class="next-check-label">チェック対象店舗</div>
+          <div class="next-check-value" id="storesToCheck">0店舗</div>
+        </div>
+        <button class="check-all-btn" onclick="checkAllStores()">
+          🔍 今すぐ全店舗チェック
+        </button>
+      </div>
+    </div>
+
+    <div class="view-toggle">
+      <button class="view-btn active" onclick="changeView('all')">📊 全店舗</button>
+      <button class="view-btn" onclick="changeView('region')">🗾 地域別</button>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-title">🔍 フィルター</div>
+      <div class="filter-groups">
+        <div class="filter-group">
+          <div class="filter-group-label">店舗状態</div>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-status-filter="all">
+              全店舗 <span class="filter-count" id="filterCountAll">0</span>
+            </button>
+            <button class="filter-btn" data-status-filter="active">
+              稼働中 <span class="filter-count" id="filterCountActive">0</span>
+            </button>
+            <button class="filter-btn" data-status-filter="inactive">
+              停止中 <span class="filter-count" id="filterCountInactive">0</span>
+            </button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group-label">キャンペーン状態</div>
+          <div class="filter-buttons">
+            <button class="filter-btn expired" data-campaign-filter="expired">
+              期限切れ <span class="filter-count" id="filterCountExpired">0</span>
+            </button>
+            <button class="filter-btn updated" data-campaign-filter="updated">
+              最近更新 <span class="filter-count" id="filterCountUpdated">0</span>
+            </button>
+            <button class="filter-btn needs-check" data-campaign-filter="needs-check">
+              要確認 <span class="filter-count" id="filterCountNeedsCheck">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="filter-apply-btn" onclick="applyFilters()">📋 フィルター適用</button>
+    </div>
+
+    <div id="summaryStats" class="summary-stats"></div>
+
+    <div class="store-management">
+      <div class="management-header">
+        <div class="management-title">🏪 店舗管理</div>
+        <button class="add-store-btn" onclick="openAddStoreModal()">➕ 店舗を追加</button>
+      </div>
+      <div class="store-list" id="storeManagementList"></div>
+    </div>
+
+    <div id="regionTabs" class="tabs" style="display: none;"></div>
+
+    <div id="storeGrid" class="store-grid"></div>
+  </div>
+
+  <!-- Add/Edit Store Modal -->
+  <div id="addStoreModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="addStoreModalTitle">新規店舗追加</div>
+        <button class="close-btn" onclick="closeModal('addStoreModal')">×</button>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="storeIdInput">店舗ID（英数字）</label>
+          <input type="text" id="storeIdInput" placeholder="例: shibuya">
+        </div>
+        <div class="form-group">
+          <label for="storeNameInput">店舗名</label>
+          <input type="text" id="storeNameInput" placeholder="例: 渋谷店">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="storeRegionInput">地域</label>
+          <input type="text" id="storeRegionInput" placeholder="例: 東京">
+        </div>
+        <div class="form-group">
+          <label for="storeUrlInput">ウェブサイトURL</label>
+          <input type="url" id="storeUrlInput" placeholder="https://shibuya.kappaseitai.com">
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="modal-btn btn-update" onclick="saveStore()">💾 保存</button>
+        <button class="modal-btn btn-history" onclick="closeModal('addStoreModal')">キャンセル</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Update Modal -->
+  <div id="updateModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="modalStoreName"></div>
+        <button class="close-btn" onclick="closeModal('updateModal')">×</button>
+      </div>
+      <div class="form-group">
+        <label for="modalDeadline">キャンペーン期限</label>
+        <input type="date" id="modalDeadline">
+      </div>
+      <div class="form-group">
+        <label for="modalRemaining">残り人数</label>
+        <input type="number" id="modalRemaining" min="0" max="100">
+      </div>
+      <div class="modal-actions">
+        <button class="modal-btn btn-update" onclick="saveUpdate()">💾 保存</button>
+        <button class="modal-btn btn-history" onclick="closeModal('updateModal')">キャンセル</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- History Modal -->
+  <div id="historyModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="historyStoreName"></div>
+        <button class="close-btn" onclick="closeModal('historyModal')">×</button>
+      </div>
+      <div id="historyList" class="history-list"></div>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div id="settingsModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">⚙️ アカウント設定</div>
+        <button class="close-btn" onclick="closeModal('settingsModal')">×</button>
+      </div>
+      <div id="passwordChangeSection">
+        <div class="form-group">
+          <label>現在のパスワード</label>
+          <input type="password" id="currentPassword" class="login-input">
+        </div>
+        <div class="form-group">
+          <label>新しいパスワード</label>
+          <input type="password" id="newPassword" class="login-input">
+        </div>
+        <div class="form-group">
+          <label>新しいパスワード（確認）</label>
+          <input type="password" id="confirmPassword" class="login-input">
+        </div>
+        <div class="login-error" id="settingsError">エラーメッセージ</div>
+        <div class="modal-actions">
+          <button class="modal-btn btn-update" onclick="changePassword()">💾 パスワード変更</button>
+          <button class="modal-btn btn-history" onclick="closeModal('settingsModal')">キャンセル</button>
+        </div>
+        <hr style="margin: 25px 0; border: 1px solid var(--border);">
+      </div>
+      <div style="margin-top: 20px;">
+        <div style="font-weight: 700; margin-bottom: 10px; color: var(--text-dim);">管理者機能</div>
+        <button class="modal-btn btn-update" id="userManagementBtn" onclick="openUserManagement()" style="width: 100%;">
+          👥 ユーザー管理
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- User Management Modal -->
+  <div id="userManagementModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">👥 ユーザー管理</div>
+        <button class="close-btn" onclick="closeModal('userManagementModal')">×</button>
+      </div>
+      <div id="ownerAuthSection">
+        <div class="form-group">
+          <label>Ownerパスワード</label>
+          <input type="password" id="masterPassword" class="login-input">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>新規ユーザー名</label>
+        <input type="text" id="newUsername" class="login-input">
+      </div>
+      <div class="form-group">
+        <label>新規パスワード</label>
+        <input type="password" id="newUserPassword" class="login-input">
+      </div>
+      <div class="form-group">
+        <label>権限</label>
+        <select id="newUserRole" class="login-input">
+          <option value="user">一般ユーザー</option>
+          <option value="master">Master（管理者）</option>
+        </select>
+      </div>
+      <div class="login-error" id="userManagementError">エラーメッセージ</div>
+      <div class="modal-actions">
+        <button class="modal-btn btn-update" onclick="addUser()">➕ ユーザー追加</button>
+        <button class="modal-btn btn-history" onclick="closeModal('userManagementModal')">キャンセル</button>
+      </div>
+      <hr style="margin: 25px 0; border: 1px solid var(--border);">
+      <div style="margin-top: 20px;">
+        <div style="font-weight: 700; margin-bottom: 10px; color: var(--text-dim);">登録ユーザー</div>
+        <div id="userList" style="display: flex; flex-direction: column; gap: 10px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-content">
+      <div class="spinner"></div>
+      <div class="loading-text">処理中...</div>
+    </div>
+  </div>
+
+  <script>
+    // Store data - All Kappa Seitai locations
+    const stores = [
+      // 茨城県
+      { id: 'ushiku', name: '牛久店', region: '茨城', url: 'https://kappaseitai.com' },
+      { id: 'tsuchiura', name: '土浦店', region: '茨城', url: 'https://tsuchiura.kappaseitai.com' },
+      { id: 'moriya', name: '守谷店', region: '茨城', url: 'https://moriya.kappaseitai.com' },
+      { id: 'hitachinaka', name: 'ひたちなか店', region: '茨城', url: 'https://hitachinaka.kappaseitai.com' },
+      { id: 'hitachi', name: '日立店', region: '茨城', url: 'https://hitachi.kappaseitai.com' },
+      { id: 'tsukuba', name: 'つくば桜店', region: '茨城', url: 'https://tsukuba.kappaseitai.com' },
+      { id: 'koga', name: '古河店', region: '茨城', url: 'https://koga.kappaseitai.com' },
+      { id: 'mito', name: '水戸店', region: '茨城', url: 'https://mito.kappaseitai.com' },
+      
+      // 北海道
+      { id: 'asahikawa', name: '旭川店', region: '北海道', url: 'https://asahikawa.kappaseitai.com' },
+      { id: 'sapporonishioka', name: '札幌西岡店', region: '北海道', url: 'https://sapporonishioka.kappaseitai.com' },
+      { id: 'higashikuyakusyo', name: '東区役所前店', region: '北海道', url: 'https://higashikuyakusyo.kappaseitai.com' },
+      { id: 'obihiro', name: '帯広店', region: '北海道', url: 'https://obihiro.kappaseitai.com' },
+      
+      // 岩手県
+      { id: 'morioka', name: '盛岡店', region: '岩手', url: 'https://morioka.kappaseitai.com' },
+      
+      // 宮城県
+      { id: 'sendai', name: '仙台六丁の目店', region: '宮城', url: 'https://sendai.kappaseitai.com' },
+      { id: 'tomiya', name: '富谷店', region: '宮城', url: 'https://tomiya.kappaseitai.com' },
+      { id: 'dainohara', name: '台原店', region: '宮城', url: 'https://dainohara.kappaseitai.com' },
+      
+      // 福島県
+      { id: 'koriyama', name: '郡山店', region: '福島', url: 'https://koriyama.kappaseitai.com' },
+      { id: 'iwaki', name: 'いわき店', region: '福島', url: 'https://iwaki.kappaseitai.com' },
+      { id: 'fukushima', name: '福島店', region: '福島', url: 'https://fukushima.kappaseitai.com' },
+      
+      // 栃木県
+      { id: 'tochigi', name: '栃木店', region: '栃木', url: 'https://tochigi.kappaseitai.com' },
+      { id: 'utsunomiya', name: '宇都宮店', region: '栃木', url: 'https://utsunomiya.kappaseitai.com' },
+      { id: 'oyama', name: '小山店', region: '栃木', url: 'https://oyama.kappaseitai.com' },
+      
+      // 千葉県
+      { id: 'ichikawa', name: '市川店', region: '千葉', url: 'https://ichikawa.kappaseitai.com' },
+      { id: 'inzai', name: '印西店', region: '千葉', url: 'https://inzai.kappaseitai.com' },
+      { id: 'kisarazu', name: '木更津店', region: '千葉', url: 'https://kisarazu.kappaseitai.com' },
+      { id: 'matsudomabashi', name: '松戸馬橋店', region: '千葉', url: 'https://matsudomabashi.kappaseitai.com' },
+      
+      // 埼玉県
+      { id: 'kumagaya', name: '熊谷店', region: '埼玉', url: 'https://kumagaya.kappaseitai.com' },
+      
+      // 東京都
+      { id: 'azabu10ban', name: 'PT麻布十番駅前整骨院', region: '東京', url: 'https://azabu10ban.kappaseitai.com' },
+      { id: 'nippori', name: '日暮里駅前店', region: '東京', url: 'https://nippori.kappaseitai.com' },
+      
+      // 神奈川県
+      { id: 'ikuta', name: '川崎生田店', region: '神奈川', url: 'https://ikuta.kappaseitai.com' },
+      { id: 'odawara', name: '小田原店', region: '神奈川', url: 'https://odawara.kappaseitai.jp' },
+      
+      // 長野県
+      { id: 'matsumoto', name: '松本店', region: '長野', url: 'https://matsumoto.kappaseitai.com' },
+      { id: 'nagano', name: '長野店', region: '長野', url: 'https://nagano.kappaseitai.com' },
+      
+      // 富山県
+      { id: 'takaoka', name: '富山高岡店', region: '富山', url: 'https://takaoka.kappaseitai.com' },
+      { id: 'toyama', name: '富山店', region: '富山', url: 'https://toyama.kappaseitai.jp' },
+      
+      // 石川県
+      { id: 'nonoichi', name: '石川野々市店', region: '石川', url: 'https://nonoichi.kappaseitai.com' },
+      { id: 'kanazawa', name: '金沢店', region: '石川', url: 'https://kanazawa.kappaseitai.jp' },
+      
+      // 愛知県
+      { id: 'owariasahi', name: '尾張旭店', region: '愛知', url: 'https://owariasahi.kappaseitai.com' },
+      { id: 'toyohashi', name: '豊橋店', region: '愛知', url: 'https://toyohashi.kappaseitai.jp' },
+      
+      // 滋賀県
+      { id: 'kusatsu', name: '草津店', region: '滋賀', url: 'https://kusatsu.kappaseitai.com' },
+      
+      // 大阪府
+      { id: 'osakafukushima', name: 'ふくしま駅前店', region: '大阪', url: 'https://osakafukushima.kappaseitai.com' },
+      { id: 'tenjinbashi', name: '天神橋店', region: '大阪', url: 'https://tenjinbashi.kappa-seitai.jp' },
+      
+      // 兵庫県
+      { id: 'nishiakashi', name: '西明石店', region: '兵庫', url: 'https://nishiakashi.kappaseitai.com' },
+      
+      // 奈良県
+      { id: 'naraoji', name: '奈良王寺店', region: '奈良', url: 'https://naraoji.kappaseitai.com' },
+      
+      // 広島県
+      { id: 'hiroshima', name: '広島光町店', region: '広島', url: 'https://hiroshima.kappaseitai.com' },
+      { id: 'hiroshimaminami', name: 'ゆめタウンみゆき店', region: '広島', url: 'https://hiroshimaminami.kappaseitai.com' },
+      { id: 'kure', name: '呉駅前店', region: '広島', url: 'https://kure.kappaseitai.com' },
+      { id: 'hiroshimagion', name: '広島祇園店', region: '広島', url: 'https://hiroshimagion.kappaseitai.com' },
+      { id: 'hatsukaichi', name: 'ゆめタウン廿日市店', region: '広島', url: 'https://hatsukaichi.kappaseitai.com' },
+      
+      // 福岡県
+      { id: 'otemon', name: '福岡大手門店', region: '福岡', url: 'https://otemon.kappaseitai.com' },
+      { id: 'kitakyushu', name: '北九州店', region: '福岡', url: 'https://kitakyushu.kappaseitai.com' },
+      { id: 'kurume', name: '久留米店', region: '福岡', url: 'https://kurume.kappaseitai.com' },
+      
+      // 熊本県
+      { id: 'nagamine', name: '長嶺店', region: '熊本', url: 'https://nagamine.kappaseitai.com' },
+      { id: 'kumamotoshimasaki', name: '熊本島崎店', region: '熊本', url: 'https://kumamotoshimasaki.kappaseitai.com' },
+      
+      // 宮崎県
+      { id: 'miyazaki', name: '宮崎店', region: '宮崎', url: 'https://miyazaki.kappaseitai.jp' },
+      
+      // 鹿児島県
+      { id: 'kagoshima', name: '鹿児島店', region: '鹿児島', url: 'https://kagoshima.kappaseitai.com' },
+      
+      // 沖縄県
+      { id: 'naha', name: '那覇店', region: '沖縄', url: 'https://naha.kappaseitai.com' }
+    ];
+
+    // User authentication
+    let currentUser = null;
+    let users = {};
+    const OWNER_USER = 'owner';
+    const OWNER_PASSWORD = 'kappa_owner_2024';
+    const MASTER_USER = 'master';
+    const MASTER_PASSWORD = 'kappa2024';
+
+    // User roles
+    const ROLES = {
+      OWNER: 'owner',
+      MASTER: 'master',
+      USER: 'user'
+    };
+
+    // Initialize users
+    function initUsers() {
+      const saved = localStorage.getItem('kappaUsers');
+      if (saved) {
+        users = JSON.parse(saved);
+        // Ensure owner exists
+        if (!users[OWNER_USER]) {
+          users[OWNER_USER] = {
+            password: OWNER_PASSWORD,
+            role: ROLES.OWNER
+          };
+          saveUsers();
+        }
+      } else {
+        // Default accounts
+        users = {
+          [OWNER_USER]: {
+            password: OWNER_PASSWORD,
+            role: ROLES.OWNER
+          },
+          [MASTER_USER]: {
+            password: MASTER_PASSWORD,
+            role: ROLES.MASTER
+          }
+        };
+        saveUsers();
+      }
+    }
+
+    function saveUsers() {
+      localStorage.setItem('kappaUsers', JSON.stringify(users));
+    }
+
+    // Check user role
+    function isOwner() {
+      return users[currentUser]?.role === ROLES.OWNER;
+    }
+
+    function isMasterOrOwner() {
+      const role = users[currentUser]?.role;
+      return role === ROLES.OWNER || role === ROLES.MASTER;
+    }
+
+    // Check if logged in
+    function checkAuth() {
+      const savedUser = sessionStorage.getItem('currentUser');
+      if (savedUser) {
+        currentUser = savedUser;
+        document.body.classList.remove('logged-out');
+        updateUserDisplay();
+        return true;
+      }
+      document.body.classList.add('logged-out');
+      return false;
+    }
+
+    // Update user display
+    function updateUserDisplay() {
+      const role = users[currentUser]?.role;
+      let roleLabel = '';
+      if (role === ROLES.OWNER) {
+        roleLabel = ' 🔑 Owner';
+      } else if (role === ROLES.MASTER) {
+        roleLabel = ' 👑 Master';
+      }
+      document.getElementById('currentUsername').textContent = currentUser + roleLabel;
+    }
+
+    // Handle login
+    function handleLogin(event) {
+      event.preventDefault();
+      const username = document.getElementById('loginUsername').value.trim();
+      const password = document.getElementById('loginPassword').value;
+      const errorEl = document.getElementById('loginError');
+
+      if (users[username] && users[username].password === password) {
+        currentUser = username;
+        sessionStorage.setItem('currentUser', username);
+        document.body.classList.remove('logged-out');
+        updateUserDisplay();
+        document.getElementById('loginUsername').value = '';
+        document.getElementById('loginPassword').value = '';
+        errorEl.classList.remove('show');
+        init();
+      } else {
+        errorEl.classList.add('show');
+        setTimeout(() => errorEl.classList.remove('show'), 3000);
+      }
+    }
+
+    // Handle logout
+    function handleLogout() {
+      if (confirm('ログアウトしますか？')) {
+        currentUser = null;
+        sessionStorage.removeItem('currentUser');
+        document.body.classList.add('logged-out');
+      }
+    }
+
+    // Open settings modal
+    function openSettingsModal() {
+      document.getElementById('currentPassword').value = '';
+      document.getElementById('newPassword').value = '';
+      document.getElementById('confirmPassword').value = '';
+      document.getElementById('settingsError').classList.remove('show');
+      
+      // Show/hide sections based on role
+      const passwordSection = document.getElementById('passwordChangeSection');
+      const userMgmtBtn = document.getElementById('userManagementBtn');
+      
+      if (isOwner()) {
+        // Owner can do everything
+        passwordSection.style.display = 'block';
+        userMgmtBtn.style.display = 'block';
+      } else if (isMasterOrOwner()) {
+        // Master can manage users but not change passwords
+        passwordSection.style.display = 'none';
+        userMgmtBtn.style.display = 'block';
+      } else {
+        // Regular users can only change their own password
+        passwordSection.style.display = 'block';
+        userMgmtBtn.style.display = 'none';
+      }
+      
+      document.getElementById('settingsModal').classList.add('active');
+    }
+
+    // Change password
+    function changePassword() {
+      if (!isOwner()) {
+        alert('パスワード変更はOwnerアカウントのみ可能です');
+        return;
+      }
+
+      const current = document.getElementById('currentPassword').value;
+      const newPass = document.getElementById('newPassword').value;
+      const confirm = document.getElementById('confirmPassword').value;
+      const errorEl = document.getElementById('settingsError');
+
+      if (!current || !newPass || !confirm) {
+        errorEl.textContent = 'すべての項目を入力してください';
+        errorEl.classList.add('show');
+        return;
+      }
+
+      if (users[currentUser].password !== current) {
+        errorEl.textContent = '現在のパスワードが正しくありません';
+        errorEl.classList.add('show');
+        return;
+      }
+
+      if (newPass !== confirm) {
+        errorEl.textContent = '新しいパスワードが一致しません';
+        errorEl.classList.add('show');
+        return;
+      }
+
+      if (newPass.length < 4) {
+        errorEl.textContent = 'パスワードは4文字以上必要です';
+        errorEl.classList.add('show');
+        return;
+      }
+
+      users[currentUser].password = newPass;
+      saveUsers();
+      alert('パスワードを変更しました');
+      closeModal('settingsModal');
+    }
+
+    // Open user management
+    function openUserManagement() {
+      if (!isMasterOrOwner()) {
+        alert('ユーザー管理はMasterまたはOwnerアカウントのみアクセス可能です');
+        return;
+      }
+
+      document.getElementById('masterPassword').value = '';
+      document.getElementById('newUsername').value = '';
+      document.getElementById('newUserPassword').value = '';
+      document.getElementById('newUserRole').value = ROLES.USER;
+      document.getElementById('userManagementError').classList.remove('show');
+      
+      // Show/hide owner password field based on role
+      const ownerAuthSection = document.getElementById('ownerAuthSection');
+      if (isOwner()) {
+        ownerAuthSection.style.display = 'none';
+      } else {
+        ownerAuthSection.style.display = 'block';
+      }
+      
+      renderUserList();
+      closeModal('settingsModal');
+      document.getElementById('userManagementModal').classList.add('active');
+    }
+
+    // Render user list
+    function renderUserList() {
+      const container = document.getElementById('userList');
+      const userList = Object.keys(users).filter(u => u !== OWNER_USER);
+
+      if (userList.length === 0) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 20px;">ユーザーが登録されていません</div>';
+        return;
+      }
+
+      container.innerHTML = userList.map(username => {
+        const user = users[username];
+        let roleLabel = '';
+        let deleteBtn = '';
+        
+        if (user.role === ROLES.MASTER) {
+          roleLabel = '<span style="color: var(--warning); margin-left: 8px;">👑 Master</span>';
+        }
+        
+        // Only owner can delete, and can't delete master
+        if (isOwner() && user.role !== ROLES.MASTER) {
+          deleteBtn = `<button onclick="deleteUser('${username}')" style="padding: 6px 12px; background: var(--danger); border: none; border-radius: 6px; color: white; font-weight: 700; cursor: pointer;">削除</button>`;
+        } else if (isMasterOrOwner() && user.role === ROLES.USER) {
+          // Master can only delete regular users
+          deleteBtn = `<button onclick="deleteUser('${username}')" style="padding: 6px 12px; background: var(--danger); border: none; border-radius: 6px; color: white; font-weight: 700; cursor: pointer;">削除</button>`;
+        }
+        
+        return `
+          <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px; background: var(--bg); border: 2px solid var(--border); border-radius: 10px;">
+            <span style="font-weight: 700; color: var(--text);">${username}${roleLabel}</span>
+            ${deleteBtn}
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Add user
+    function addUser() {
+      const username = document.getElementById('newUsername').value.trim();
+      const password = document.getElementById('newUserPassword').value;
+      const role = document.getElementById('newUserRole').value;
+      const errorEl = document.getElementById('userManagementError');
+
+      // Check authentication based on role
+      if (!isOwner()) {
+        const masterPass = document.getElementById('masterPassword').value;
+        if (masterPass !== OWNER_PASSWORD) {
+          errorEl.textContent = 'Ownerパスワードが正しくありません';
+          errorEl.classList.add('show');
+          return;
+        }
+      }
+
+      if (!username || !password) {
+        errorEl.textContent = 'ユーザー名とパスワードを入力してください';
+        errorEl.classList.add('show');
+        return;
+      }
+
+      if (users[username]) {
+        errorEl.textContent = 'このユーザー名は既に使用されています';
+        errorEl.classList.add('show');
+        return;
+      }
+
+      if (password.length < 4) {
+        errorEl.textContent = 'パスワードは4文字以上必要です';
+        errorEl.classList.add('show');
+        return;
+      }
+
+      // Only owner can create master accounts
+      if (role === ROLES.MASTER && !isOwner()) {
+        errorEl.textContent = 'Masterアカウントの作成はOwnerのみ可能です';
+        errorEl.classList.add('show');
+        return;
+      }
+
+      users[username] = {
+        password: password,
+        role: role
+      };
+      saveUsers();
+      alert(`ユーザー「${username}」を追加しました`);
+      document.getElementById('newUsername').value = '';
+      document.getElementById('newUserPassword').value = '';
+      document.getElementById('newUserRole').value = ROLES.USER;
+      errorEl.classList.remove('show');
+      renderUserList();
+    }
+
+    // Delete user
+    function deleteUser(username) {
+      const user = users[username];
+      
+      // Check permissions
+      if (user.role === ROLES.MASTER && !isOwner()) {
+        alert('Masterアカウントの削除はOwnerのみ可能です');
+        return;
+      }
+
+      if (confirm(`ユーザー「${username}」を削除しますか？`)) {
+        delete users[username];
+        saveUsers();
+        renderUserList();
+      }
+    }
+
+    let storeData = {};
+    let currentView = 'all';
+    let currentRegion = null;
+    let currentStoreId = null;
+    let scheduleEnabled = false;
+    let selectedDays = [1, 3, 5]; // Default: Monday, Wednesday, Friday
+    let checkTime = '09:00';
+    let checkInterval = 7; // Default: weekly
+    let checkIntervalTimer = null;
+    let editingStoreId = null;
+    let storeStatusFilter = 'all'; // all, active, inactive
+    let campaignFilter = null; // null, expired, updated, needs-check
+    let pendingStoreStatusFilter = 'all';
+    let pendingCampaignFilter = null;
+
+    // Initialize
+    function init() {
+      initUsers();
+      if (!checkAuth()) {
+        return;
+      }
+      
+      loadStores();
+      loadData();
+      loadScheduleSettings();
+      setupFilterButtons();
+      renderStoreManagementList();
+      updateFilterCounts();
+      renderView();
+      updateSummaryStats();
+      updateNextCheckTime();
+      
+      // Update next check time every minute
+      setInterval(updateNextCheckTime, 60000);
+    }
+
+    // Generate test data for demonstration
+    function generateTestData() {
+      if (!confirm('テストデータを生成しますか？\n\n既存のデータは上書きされます。')) {
+        return;
+      }
+
+      const today = new Date();
+      const yesterday = new Date(today);
+      yesterday.setDate(yesterday.getDate() - 1);
+      const lastWeek = new Date(today);
+      lastWeek.setDate(lastWeek.getDate() - 7);
+      const lastMonth = new Date(today);
+      lastMonth.setDate(lastMonth.getDate() - 30);
+      const nextWeek = new Date(today);
+      nextWeek.setDate(nextWeek.getDate() + 7);
+      const nextMonth = new Date(today);
+      nextMonth.setDate(nextMonth.getDate() + 30);
+
+      // Helper function to format date
+      const formatDate = (date) => {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+      };
+
+      // Generate random data for stores
+      const testScenarios = [
+        { deadline: formatDate(yesterday), remaining: 5, timestamp: lastWeek.toISOString() }, // 期限切れ
+        { deadline: formatDate(nextWeek), remaining: 3, timestamp: yesterday.toISOString() }, // 最近更新
+        { deadline: formatDate(nextMonth), remaining: 8, timestamp: lastMonth.toISOString() }, // 要確認
+        { deadline: formatDate(nextWeek), remaining: 10, timestamp: today.toISOString() }, // 最近更新
+        { deadline: formatDate(yesterday), remaining: 2, timestamp: lastMonth.toISOString() }, // 期限切れ
+      ];
+
+      // Clear existing data
+      storeData = {};
+
+      // Add test data to first 20 stores
+      const activeStores = stores.filter(s => s.active !== false).slice(0, 20);
+      
+      activeStores.forEach((store, index) => {
+        const scenario = testScenarios[index % testScenarios.length];
+        
+        if (!storeData[store.id]) {
+          storeData[store.id] = { history: [] };
+        }
+
+        // Add 3-5 history records
+        const recordCount = 3 + Math.floor(Math.random() * 3);
+        for (let i = 0; i < recordCount; i++) {
+          const daysAgo = i * 7;
+          const recordDate = new Date(today);
+          recordDate.setDate(recordDate.getDate() - daysAgo);
+          
+          const record = {
+            timestamp: recordDate.toISOString(),
+            deadline: i === 0 ? scenario.deadline : formatDate(nextMonth),
+            remaining: i === 0 ? scenario.remaining : Math.floor(Math.random() * 10) + 1,
+            status: i === 0 ? 'updated' : 'unchanged',
+            dateChanged: i % 2 === 0,
+            slotsChanged: i % 3 === 0
+          };
+          
+          storeData[store.id].history.unshift(record);
+        }
+      });
+
+      saveData();
+      updateFilterCounts();
+      renderView();
+      updateSummaryStats();
+      
+      alert('テストデータを生成しました！\n\n・期限切れ: 赤いバッジ\n・最近更新: オレンジのバッジ\n・要確認: グレーのバッジ\n\nフィルター機能も試してみてください。');
+    }
+
+    // Clear all test data
+    function clearTestData() {
+      if (!confirm('すべてのキャンペーンデータを削除しますか？\n\n店舗情報は残ります。')) {
+        return;
+      }
+
+      storeData = {};
+      stores.forEach(store => {
+        storeData[store.id] = { history: [] };
+      });
+
+      saveData();
+      updateFilterCounts();
+      renderView();
+      updateSummaryStats();
+      
+      alert('すべてのデータを削除しました');
+    }
+
+    // Initialize on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      initUsers();
+      checkAuth();
+    });
+
+    // Setup filter button handlers
+    function setupFilterButtons() {
+      // Store status filter buttons
+      document.querySelectorAll('[data-status-filter]').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const filter = this.getAttribute('data-status-filter');
+          pendingStoreStatusFilter = filter;
+          
+          // Update button states
+          document.querySelectorAll('[data-status-filter]').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+      
+      // Campaign filter buttons  
+      document.querySelectorAll('[data-campaign-filter]').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const filter = this.getAttribute('data-campaign-filter');
+          
+          // Toggle filter
+          if (pendingCampaignFilter === filter) {
+            pendingCampaignFilter = null;
+            this.classList.remove('active');
+          } else {
+            // Remove active from all campaign filter buttons
+            document.querySelectorAll('[data-campaign-filter]').forEach(b => b.classList.remove('active'));
+            pendingCampaignFilter = filter;
+            this.classList.add('active');
+          }
+        });
+      });
+    }
+
+    // Apply filters
+    function applyFilters() {
+      storeStatusFilter = pendingStoreStatusFilter;
+      campaignFilter = pendingCampaignFilter;
+      renderStoreManagementList();
+      renderView();
+    }
+
+    // Get filtered stores
+    function getFilteredStores() {
+      let filtered = stores;
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      // Apply store status filter
+      if (storeStatusFilter === 'active') {
+        filtered = filtered.filter(s => s.active !== false);
+      } else if (storeStatusFilter === 'inactive') {
+        filtered = filtered.filter(s => s.active === false);
+      }
+      
+      // Apply campaign filter
+      if (campaignFilter) {
+        filtered = filtered.filter(store => {
+          const data = storeData[store.id];
+          
+          if (campaignFilter === 'expired') {
+            if (!data || data.history.length === 0) return false;
+            const deadline = new Date(data.history[0].deadline);
+            deadline.setHours(0, 0, 0, 0);
+            return deadline < today;
+          }
+          
+          if (campaignFilter === 'updated') {
+            if (!data || data.history.length === 0) return false;
+            const daysSince = (new Date() - new Date(data.history[0].timestamp)) / (1000 * 60 * 60 * 24);
+            return daysSince < 7;
+          }
+          
+          if (campaignFilter === 'needs-check') {
+            if (!data || data.history.length === 0) return true;
+            const daysSince = (new Date() - new Date(data.history[0].timestamp)) / (1000 * 60 * 60 * 24);
+            return daysSince >= 7;
+          }
+          
+          return true;
+        });
+      }
+      
+      return filtered;
+    }
+
+    // Update filter counts
+    function updateFilterCounts() {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      const allStores = stores.length;
+      const activeStores = stores.filter(s => s.active !== false).length;
+      const inactiveStores = stores.filter(s => s.active === false).length;
+      
+      const expiredStores = stores.filter(s => {
+        const data = storeData[s.id];
+        if (!data || data.history.length === 0) return false;
+        const deadline = new Date(data.history[0].deadline);
+        deadline.setHours(0, 0, 0, 0);
+        return deadline < today;
+      }).length;
+      
+      const updatedStores = stores.filter(s => {
+        const data = storeData[s.id];
+        if (!data || data.history.length === 0) return false;
+        const daysSince = (new Date() - new Date(data.history[0].timestamp)) / (1000 * 60 * 60 * 24);
+        return daysSince < 7;
+      }).length;
+      
+      const needsCheckStores = stores.filter(s => {
+        const data = storeData[s.id];
+        if (!data || data.history.length === 0) return true;
+        const daysSince = (new Date() - new Date(data.history[0].timestamp)) / (1000 * 60 * 60 * 24);
+        return daysSince >= 7;
+      }).length;
+      
+      document.getElementById('filterCountAll').textContent = `(${allStores})`;
+      document.getElementById('filterCountActive').textContent = `(${activeStores})`;
+      document.getElementById('filterCountInactive').textContent = `(${inactiveStores})`;
+      document.getElementById('filterCountExpired').textContent = `(${expiredStores})`;
+      document.getElementById('filterCountUpdated').textContent = `(${updatedStores})`;
+      document.getElementById('filterCountNeedsCheck').textContent = `(${needsCheckStores})`;
+    }
+
+    // Load stores from localStorage or use defaults
+    function loadStores() {
+      const saved = localStorage.getItem('kappaStores');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        // Check if stores have 'active' property, if not add it
+        stores.length = 0; // Clear default stores
+        parsed.forEach(store => {
+          stores.push({
+            ...store,
+            active: store.active !== undefined ? store.active : true
+          });
+        });
+      } else {
+        // Add active property to default stores
+        stores.forEach(store => {
+          store.active = true;
+        });
+        saveStores();
+      }
+    }
+
+    // Save stores to localStorage
+    function saveStores() {
+      localStorage.setItem('kappaStores', JSON.stringify(stores));
+    }
+
+    // Get active stores only
+    function getActiveStores() {
+      return stores.filter(s => s.active !== false);
+    }
+
+    // Open add store modal
+    function openAddStoreModal() {
+      editingStoreId = null;
+      document.getElementById('addStoreModalTitle').textContent = '新規店舗追加';
+      document.getElementById('storeIdInput').value = '';
+      document.getElementById('storeIdInput').disabled = false;
+      document.getElementById('storeNameInput').value = '';
+      document.getElementById('storeRegionInput').value = '';
+      document.getElementById('storeUrlInput').value = '';
+      document.getElementById('addStoreModal').classList.add('active');
+    }
+
+    // Open edit store modal
+    function openEditStoreModal(storeId) {
+      const store = stores.find(s => s.id === storeId);
+      if (!store) return;
+
+      editingStoreId = storeId;
+      document.getElementById('addStoreModalTitle').textContent = '店舗情報編集';
+      document.getElementById('storeIdInput').value = store.id;
+      document.getElementById('storeIdInput').disabled = true;
+      document.getElementById('storeNameInput').value = store.name;
+      document.getElementById('storeRegionInput').value = store.region;
+      document.getElementById('storeUrlInput').value = store.url;
+      document.getElementById('addStoreModal').classList.add('active');
+    }
+
+    // Save store (add or edit)
+    function saveStore() {
+      const id = document.getElementById('storeIdInput').value.trim();
+      const name = document.getElementById('storeNameInput').value.trim();
+      const region = document.getElementById('storeRegionInput').value.trim();
+      const url = document.getElementById('storeUrlInput').value.trim();
+
+      if (!id || !name || !region || !url) {
+        alert('すべての項目を入力してください');
+        return;
+      }
+
+      // Validate ID format (alphanumeric and hyphen only)
+      if (!/^[a-z0-9-]+$/.test(id)) {
+        alert('店舗IDは英小文字、数字、ハイフンのみ使用できます');
+        return;
+      }
+
+      // Validate URL
+      try {
+        new URL(url);
+      } catch (e) {
+        alert('正しいURLを入力してください');
+        return;
+      }
+
+      if (editingStoreId) {
+        // Edit existing store
+        const storeIndex = stores.findIndex(s => s.id === editingStoreId);
+        if (storeIndex !== -1) {
+          stores[storeIndex] = {
+            ...stores[storeIndex],
+            name,
+            region,
+            url
+          };
+        }
+      } else {
+        // Add new store
+        if (stores.find(s => s.id === id)) {
+          alert('この店舗IDは既に使用されています');
+          return;
+        }
+
+        stores.push({
+          id,
+          name,
+          region,
+          url,
+          active: true
+        });
+
+        // Initialize data for new store
+        if (!storeData[id]) {
+          storeData[id] = {
+            history: []
+          };
+        }
+      }
+
+      saveStores();
+      saveData();
+      closeModal('addStoreModal');
+      renderStoreManagementList();
+      updateFilterCounts();
+      renderView();
+      updateSummaryStats();
+    }
+
+    // Toggle store active status
+    function toggleStoreStatus(storeId) {
+      const store = stores.find(s => s.id === storeId);
+      if (!store) return;
+
+      store.active = !store.active;
+      saveStores();
+      renderStoreManagementList();
+      updateFilterCounts();
+      renderView();
+      updateSummaryStats();
+    }
+
+    // Delete store
+    function deleteStore(storeId) {
+      if (!isOwner()) {
+        alert('店舗の削除はOwnerアカウントのみ可能です');
+        return;
+      }
+
+      const store = stores.find(s => s.id === storeId);
+      if (!store) return;
+
+      if (!confirm(`「${store.name}」を完全に削除しますか？\n\nこの操作は取り消せません。履歴データもすべて削除されます。`)) {
+        return;
+      }
+
+      // Remove from stores array
+      const index = stores.findIndex(s => s.id === storeId);
+      if (index !== -1) {
+        stores.splice(index, 1);
+      }
+
+      // Remove data
+      delete storeData[storeId];
+
+      saveStores();
+      saveData();
+      renderStoreManagementList();
+      updateFilterCounts();
+      renderView();
+      updateSummaryStats();
+    }
+
+    // Render store management list
+    function renderStoreManagementList() {
+      const container = document.getElementById('storeManagementList');
+      
+      if (stores.length === 0) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 40px;">店舗がありません</div>';
+        return;
+      }
+
+      // Apply filters to store management list
+      const filteredStores = getFilteredStores();
+
+      if (filteredStores.length === 0) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 40px;">フィルター条件に一致する店舗がありません</div>';
+        return;
+      }
+
+      // Sort stores by region and name
+      const sortedStores = [...filteredStores].sort((a, b) => {
+        if (a.region !== b.region) {
+          return a.region.localeCompare(b.region, 'ja');
+        }
+        return a.name.localeCompare(b.name, 'ja');
+      });
+
+      container.innerHTML = sortedStores.map(store => {
+        const statusText = store.active ? '⏸️ 停止' : '▶️ 再開';
+        const inactiveClass = store.active ? '' : 'inactive';
+        
+        // Only owner can delete stores
+        const deleteButton = isOwner() 
+          ? `<button class="store-item-btn btn-delete" onclick="deleteStore('${store.id}')">
+              🗑️ 削除
+            </button>`
+          : '';
+        
+        return `
+          <div class="store-item ${inactiveClass}">
+            <div class="store-item-info">
+              <div class="store-item-name">${store.name}</div>
+              <div class="store-item-region">${store.region}</div>
+              <div class="store-item-url">${store.url}</div>
+            </div>
+            <div class="store-item-actions">
+              <button class="store-item-btn btn-toggle" onclick="toggleStoreStatus('${store.id}')">
+                ${statusText}
+              </button>
+              <button class="store-item-btn btn-edit" onclick="openEditStoreModal('${store.id}')">
+                ✏️ 編集
+              </button>
+              ${deleteButton}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Load schedule settings
+    function loadScheduleSettings() {
+      const saved = localStorage.getItem('kappaAllStoresSchedule');
+      if (saved) {
+        const schedule = JSON.parse(saved);
+        scheduleEnabled = schedule.enabled || false;
+        selectedDays = schedule.days || [1, 3, 5]; // Default: Mon, Wed, Fri
+        checkTime = schedule.time || '09:00';
+        checkInterval = schedule.interval || 7;
+        
+        document.getElementById('checkTime').value = checkTime;
+        document.getElementById('checkInterval').value = checkInterval;
+        updateDayButtons();
+        updateToggle();
+        
+        if (scheduleEnabled) {
+          startScheduleCheck();
+        }
+      } else {
+        // First time - set default days
+        updateDayButtons();
+      }
+    }
+
+    // Save schedule settings
+    function saveScheduleSettings() {
+      const schedule = {
+        enabled: scheduleEnabled,
+        days: selectedDays,
+        time: checkTime,
+        interval: checkInterval
+      };
+      localStorage.setItem('kappaAllStoresSchedule', JSON.stringify(schedule));
+    }
+
+    // Toggle schedule
+    function toggleSchedule() {
+      scheduleEnabled = !scheduleEnabled;
+      updateToggle();
+      saveScheduleSettings();
+      
+      if (scheduleEnabled) {
+        startScheduleCheck();
+      } else {
+        stopScheduleCheck();
+      }
+    }
+
+    function updateToggle() {
+      const toggle = document.getElementById('scheduleToggle');
+      const label = document.getElementById('toggleLabel');
+      
+      if (scheduleEnabled) {
+        toggle.classList.add('active');
+        label.textContent = 'オン';
+      } else {
+        toggle.classList.remove('active');
+        label.textContent = 'オフ';
+      }
+      
+      updateNextCheckTime();
+    }
+
+    // Toggle day selection
+    function toggleDay(day) {
+      const index = selectedDays.indexOf(day);
+      if (index > -1) {
+        if (selectedDays.length > 1) {
+          selectedDays.splice(index, 1);
+        }
+      } else {
+        selectedDays.push(day);
+      }
+      selectedDays.sort((a, b) => a - b);
+      updateDayButtons();
+      saveScheduleSettings();
+      updateNextCheckTime();
+    }
+
+    function updateDayButtons() {
+      document.querySelectorAll('.day-btn').forEach(btn => {
+        const day = parseInt(btn.dataset.day);
+        if (selectedDays.includes(day)) {
+          btn.classList.add('selected');
+        } else {
+          btn.classList.remove('selected');
+        }
+      });
+    }
+
+    // Update check time
+    document.getElementById('checkTime').addEventListener('change', function() {
+      checkTime = this.value;
+      saveScheduleSettings();
+      updateNextCheckTime();
+    });
+
+    // Update check interval
+    document.getElementById('checkInterval').addEventListener('change', function() {
+      checkInterval = parseInt(this.value);
+      saveScheduleSettings();
+      updateNextCheckTime();
+    });
+
+    // Calculate next check time
+    function calculateNextCheck() {
+      if (!scheduleEnabled || selectedDays.length === 0) {
+        return null;
+      }
+
+      const now = new Date();
+      const [hours, minutes] = checkTime.split(':').map(Number);
+      
+      // Get stores that need checking
+      const storesToCheck = getStoresToCheck();
+      
+      // Start checking from today
+      let nextCheck = new Date(now);
+      nextCheck.setHours(hours, minutes, 0, 0);
+      
+      // If today's time has passed, start from tomorrow
+      if (nextCheck <= now) {
+        nextCheck.setDate(nextCheck.getDate() + 1);
+      }
+      
+      // Find next scheduled day
+      let daysChecked = 0;
+      while (daysChecked < 8) {
+        const dayOfWeek = nextCheck.getDay();
+        if (selectedDays.includes(dayOfWeek)) {
+          return { date: nextCheck, storesToCheck: storesToCheck.length };
+        }
+        nextCheck.setDate(nextCheck.getDate() + 1);
+        daysChecked++;
+      }
+      
+      return null;
+    }
+
+    // Get stores that need checking based on interval
+    function getStoresToCheck() {
+      const now = new Date();
+      const activeStores = getActiveStores();
+      
+      return activeStores.filter(store => {
+        const data = storeData[store.id];
+        if (!data || data.history.length === 0) {
+          return true; // No data yet
+        }
+        
+        const lastCheck = new Date(data.history[0].timestamp);
+        const daysSinceCheck = (now - lastCheck) / (1000 * 60 * 60 * 24);
+        
+        return daysSinceCheck >= checkInterval;
+      });
+    }
+
+    function updateNextCheckTime() {
+      const nextCheck = calculateNextCheck();
+      const timeDisplay = document.getElementById('nextCheckTime');
+      const storesDisplay = document.getElementById('storesToCheck');
+      
+      if (!scheduleEnabled) {
+        timeDisplay.textContent = 'スケジュールを有効にしてください';
+        storesDisplay.textContent = '0店舗';
+        return;
+      }
+      
+      if (!nextCheck) {
+        timeDisplay.textContent = '設定エラー';
+        storesDisplay.textContent = '0店舗';
+        return;
+      }
+      
+      const dayNames = ['日', '月', '火', '水', '木', '金', '土'];
+      const formatted = nextCheck.date.toLocaleDateString('ja-JP', {
+        month: 'numeric',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      });
+      const dayName = dayNames[nextCheck.date.getDay()];
+      
+      timeDisplay.textContent = `${formatted} (${dayName})`;
+      storesDisplay.textContent = `${nextCheck.storesToCheck}店舗`;
+    }
+
+    // Start schedule checking
+    function startScheduleCheck() {
+      stopScheduleCheck();
+      
+      checkIntervalTimer = setInterval(() => {
+        const now = new Date();
+        const currentDay = now.getDay();
+        const currentTime = now.getHours().toString().padStart(2, '0') + ':' + 
+                           now.getMinutes().toString().padStart(2, '0');
+        
+        if (selectedDays.includes(currentDay) && currentTime === checkTime) {
+          checkAllStores();
+        }
+      }, 60000);
+    }
+
+    function stopScheduleCheck() {
+      if (checkIntervalTimer) {
+        clearInterval(checkIntervalTimer);
+        checkIntervalTimer = null;
+      }
+    }
+
+    // Check all stores that need checking
+    function checkAllStores() {
+      const storesToCheck = getStoresToCheck();
+      
+      if (storesToCheck.length === 0) {
+        alert('✅ チェックが必要な店舗はありません\n\nすべての店舗が最新の状態です。');
+        return;
+      }
+      
+      const storeNames = storesToCheck.map(s => `・${s.name}`).join('\n');
+      alert(`📋 チェックが必要な店舗（${storesToCheck.length}店舗）\n\n${storeNames}\n\n各店舗の「📝 更新」ボタンから情報を入力してください。`);
+      
+      // Highlight stores that need checking
+      highlightStoresToCheck(storesToCheck);
+    }
+    
+    // Highlight stores that need checking
+    function highlightStoresToCheck(storesToCheck) {
+      const storeIds = storesToCheck.map(s => s.id);
+      
+      // Highlight cards briefly
+      setTimeout(() => {
+        const allCards = document.querySelectorAll('.store-card');
+        const activeStores = getActiveStores();
+        
+        allCards.forEach((card, index) => {
+          if (index < activeStores.length) {
+            const storeId = activeStores[index].id;
+            if (storeId && storeIds.includes(storeId)) {
+              card.style.boxShadow = '0 0 30px rgba(247, 127, 0, 0.8)';
+              card.style.transform = 'scale(1.02)';
+              card.style.transition = 'all 0.3s ease';
+              setTimeout(() => {
+                card.style.boxShadow = '';
+                card.style.transform = '';
+              }, 3000);
+            }
+          }
+        });
+      }, 100);
+    }
+
+    // Load data from localStorage
+    function loadData() {
+      const saved = localStorage.getItem('kappaAllStores');
+      if (saved) {
+        storeData = JSON.parse(saved);
+      } else {
+        // Initialize empty data for all stores
+        stores.forEach(store => {
+          storeData[store.id] = {
+            history: []
+          };
+        });
+      }
+    }
+
+    // Save data to localStorage
+    function saveData() {
+      localStorage.setItem('kappaAllStores', JSON.stringify(storeData));
+    }
+
+    // Change view
+    function changeView(view) {
+      currentView = view;
+      currentRegion = null; // Reset region when changing view
+      
+      // Update button states
+      document.querySelectorAll('.view-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.target.classList.add('active');
+      
+      renderView();
+    }
+
+    // Render view
+    function renderView() {
+      const regionTabs = document.getElementById('regionTabs');
+      const storeGrid = document.getElementById('storeGrid');
+      
+      const filteredStores = getFilteredStores();
+
+      if (currentView === 'all') {
+        regionTabs.style.display = 'none';
+        renderStores(filteredStores);
+      } else {
+        // Region view
+        regionTabs.style.display = 'flex';
+        const regions = [...new Set(filteredStores.map(s => s.region))].sort();
+        
+        // Auto-select first region if none selected or current region not available
+        if (!currentRegion || !regions.includes(currentRegion)) {
+          currentRegion = regions[0] || null;
+        }
+        
+        renderRegionTabs(filteredStores);
+        const regionFiltered = currentRegion 
+          ? filteredStores.filter(s => s.region === currentRegion)
+          : filteredStores;
+        renderStores(regionFiltered);
+      }
+    }
+
+    // Render region tabs
+    function renderRegionTabs(filteredStores) {
+      const regions = [...new Set(filteredStores.map(s => s.region))].sort();
+      const container = document.getElementById('regionTabs');
+      
+      container.innerHTML = regions.map(region => {
+        const count = filteredStores.filter(s => s.region === region).length;
+        const isActive = region === currentRegion ? 'active' : '';
+        return `
+          <div class="tab ${isActive}" onclick="selectRegion('${region}')">
+            ${region} (${count})
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Select region
+    function selectRegion(region) {
+      currentRegion = region;
+      renderView();
+    }
+
+    // Render stores
+    function renderStores(storesToRender) {
+      const container = document.getElementById('storeGrid');
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      container.innerHTML = storesToRender.map(store => {
+        const data = storeData[store.id];
+        const latest = data?.history?.[0];
+        
+        let deadlineText = 'データなし';
+        let remainingText = 'データなし';
+        let statusClass = 'badge-no-data';
+        let statusText = 'データなし';
+        let isExpired = false;
+        
+        if (latest) {
+          const deadline = new Date(latest.deadline);
+          deadline.setHours(0, 0, 0, 0);
+          
+          deadlineText = deadline.toLocaleDateString('ja-JP', {
+            month: 'numeric',
+            day: 'numeric'
+          });
+          remainingText = `${latest.remaining}名`;
+          
+          // Check if expired
+          if (deadline < today) {
+            statusClass = 'badge-expired';
+            statusText = '期限切れ';
+            isExpired = true;
+          } else {
+            // Check if updated in last 7 days
+            const daysSinceUpdate = (new Date() - new Date(latest.timestamp)) / (1000 * 60 * 60 * 24);
+            if (daysSinceUpdate < 7) {
+              statusClass = 'badge-updated';
+              statusText = '最近更新';
+            } else {
+              statusClass = 'badge-no-data';
+              statusText = '要確認';
+            }
+          }
+        }
+        
+        const expiredStyle = isExpired ? 'style="border: 3px solid #e63946;"' : '';
+        
+        return `
+          <div class="store-card" ${expiredStyle}>
+            <div class="status-badge ${statusClass}">${statusText}</div>
+            <div class="store-header">
+              <div>
+                <div class="store-name">${store.name}</div>
+              </div>
+              <div class="store-region">${store.region}</div>
+            </div>
+            <div class="store-info">
+              <div class="info-row">
+                <span class="info-label">期限</span>
+                <span class="info-value date ${!latest ? 'na' : ''} ${isExpired ? 'expired' : ''}">${deadlineText}</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">残り</span>
+                <span class="info-value slots ${!latest ? 'na' : ''}">${remainingText}</span>
+              </div>
+            </div>
+            <div class="store-actions">
+              <button class="store-btn btn-update" onclick="openUpdateModal('${store.id}')">
+                📝 更新
+              </button>
+              <button class="store-btn btn-history" onclick="openHistoryModal('${store.id}')">
+                📊 履歴
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Update summary stats
+    function updateSummaryStats() {
+      const container = document.getElementById('summaryStats');
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      const activeStores = getActiveStores();
+      const totalStores = activeStores.length;
+      const totalInactive = stores.filter(s => !s.active).length;
+      const storesWithData = activeStores.filter(s => storeData[s.id]?.history.length > 0).length;
+      
+      // Count expired stores
+      const expiredStores = activeStores.filter(s => {
+        const data = storeData[s.id];
+        if (!data || data.history.length === 0) return false;
+        const deadline = new Date(data.history[0].deadline);
+        deadline.setHours(0, 0, 0, 0);
+        return deadline < today;
+      }).length;
+      
+      const recentlyUpdated = activeStores.filter(s => {
+        const data = storeData[s.id];
+        if (!data || data.history.length === 0) return false;
+        const daysSince = (new Date() - new Date(data.history[0].timestamp)) / (1000 * 60 * 60 * 24);
+        return daysSince < 7;
+      }).length;
+      const needsCheck = totalStores - recentlyUpdated;
+      
+      container.innerHTML = `
+        <div class="stat-card" onclick="applyQuickFilter('active', null)" title="クリックで稼働中店舗を表示">
+          <div class="stat-label">稼働中店舗</div>
+          <div class="stat-value">${totalStores}</div>
+        </div>
+        <div class="stat-card" onclick="applyQuickFilter('inactive', null)" title="クリックで停止中店舗を表示">
+          <div class="stat-label">停止中店舗</div>
+          <div class="stat-value">${totalInactive}</div>
+        </div>
+        <div class="stat-card" onclick="applyQuickFilter('active', 'expired')" title="クリックで期限切れ店舗を表示">
+          <div class="stat-label">期限切れ</div>
+          <div class="stat-value" style="color: var(--danger);">${expiredStores}</div>
+        </div>
+        <div class="stat-card" onclick="applyQuickFilter('active', 'updated')" title="クリックで最近更新店舗を表示">
+          <div class="stat-label">最近更新</div>
+          <div class="stat-value">${recentlyUpdated}</div>
+        </div>
+        <div class="stat-card" onclick="applyQuickFilter('active', 'needs-check')" title="クリックで要確認店舗を表示">
+          <div class="stat-label">要確認</div>
+          <div class="stat-value">${needsCheck}</div>
+        </div>
+      `;
+    }
+
+    // Quick filter from stat card click
+    function applyQuickFilter(statusFilter, campaignFilterValue) {
+      // Update pending filters
+      pendingStoreStatusFilter = statusFilter;
+      pendingCampaignFilter = campaignFilterValue;
+      
+      // Update UI button states
+      document.querySelectorAll('[data-status-filter]').forEach(btn => {
+        if (btn.getAttribute('data-status-filter') === statusFilter) {
+          document.querySelectorAll('[data-status-filter]').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        }
+      });
+      
+      document.querySelectorAll('[data-campaign-filter]').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      if (campaignFilterValue) {
+        document.querySelectorAll('[data-campaign-filter]').forEach(btn => {
+          if (btn.getAttribute('data-campaign-filter') === campaignFilterValue) {
+            btn.classList.add('active');
+          }
+        });
+      }
+      
+      // Apply filters
+      storeStatusFilter = statusFilter;
+      campaignFilter = campaignFilterValue;
+      renderStoreManagementList();
+      renderView();
+      
+      // Scroll to store grid
+      document.getElementById('storeGrid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Open update modal
+    function openUpdateModal(storeId) {
+      currentStoreId = storeId;
+      const store = stores.find(s => s.id === storeId);
+      const data = storeData[storeId];
+      const latest = data.history[0];
+      
+      document.getElementById('modalStoreName').textContent = store.name;
+      document.getElementById('modalDeadline').value = latest ? latest.deadline : '';
+      document.getElementById('modalRemaining').value = latest ? latest.remaining : '';
+      
+      document.getElementById('updateModal').classList.add('active');
+    }
+
+    // Save update
+    function saveUpdate() {
+      const deadline = document.getElementById('modalDeadline').value;
+      const remaining = parseInt(document.getElementById('modalRemaining').value);
+      
+      if (!deadline || isNaN(remaining)) {
+        alert('すべての項目を入力してください');
+        return;
+      }
+      
+      const data = storeData[currentStoreId];
+      const lastRecord = data.history[0];
+      
+      let status = 'unchanged';
+      let dateChanged = false;
+      let slotsChanged = false;
+      
+      if (lastRecord) {
+        if (lastRecord.deadline !== deadline) {
+          dateChanged = true;
+          status = 'updated';
+        }
+        if (lastRecord.remaining !== remaining) {
+          slotsChanged = true;
+          status = 'updated';
+        }
+      } else {
+        status = 'updated';
+        dateChanged = true;
+        slotsChanged = true;
+      }
+      
+      const record = {
+        timestamp: new Date().toISOString(),
+        deadline: deadline,
+        remaining: remaining,
+        status: status,
+        dateChanged: dateChanged,
+        slotsChanged: slotsChanged
+      };
+      
+      data.history.unshift(record);
+      saveData();
+      closeModal('updateModal');
+      updateFilterCounts();
+      renderView();
+      updateSummaryStats();
+    }
+
+    // Open history modal
+    function openHistoryModal(storeId) {
+      currentStoreId = storeId;
+      const store = stores.find(s => s.id === storeId);
+      const data = storeData[storeId];
+      
+      document.getElementById('historyStoreName').textContent = `${store.name} - 履歴`;
+      
+      const container = document.getElementById('historyList');
+      
+      if (data.history.length === 0) {
+        container.innerHTML = '<div style="text-align: center; color: var(--text-dim); padding: 40px;">履歴がありません</div>';
+      } else {
+        container.innerHTML = data.history.map(record => {
+          const date = new Date(record.timestamp);
+          const formattedDate = date.toLocaleDateString('ja-JP', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit'
+          });
+          
+          const deadlineFormatted = new Date(record.deadline).toLocaleDateString('ja-JP', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+          });
+          
+          return `
+            <div class="history-item">
+              <div class="history-date">${formattedDate}</div>
+              <div class="history-details">
+                <div class="history-row">
+                  <span>期限:</span>
+                  <span>${deadlineFormatted} ${record.dateChanged ? '🔄' : ''}</span>
+                </div>
+                <div class="history-row">
+                  <span>残り:</span>
+                  <span>${record.remaining}名 ${record.slotsChanged ? '🔄' : ''}</span>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+      
+      document.getElementById('historyModal').classList.add('active');
+    }
+
+    // Close modal
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.remove('active');
+    }
+
+    // Close modal on outside click
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', function(e) {
+        if (e.target === this) {
+          this.classList.remove('active');
+        }
+      });
+    });
+
+    // Initialize on load
+    init();
+  </script>
+</body>
+</html>
