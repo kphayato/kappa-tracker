@@ -1338,8 +1338,13 @@
           <div class="next-check-label">チェック対象店舗</div>
           <div class="next-check-value" id="storesToCheck">0店舗</div>
         </div>
-        <button class="check-all-btn" onclick="checkAllStores()">
-          🔍 今すぐ全店舗チェック
+        <div id="dataCollectionButtons" style="display: none;">
+          <button class="check-all-btn" onclick="triggerDataCollection()" style="background: linear-gradient(135deg, #f77f00, #fcbf49);">
+            🔄 最新データを取得（5分）
+          </button>
+        </div>
+        <button class="check-all-btn" onclick="checkAllStores()" style="margin-top: 10px; background: linear-gradient(135deg, #1e7ba0, #26c485);">
+          📋 チェック対象店舗を表示
         </button>
       </div>
     </div>
@@ -1666,6 +1671,14 @@
     const OWNER_PASSWORD = 'kappa_owner_2024';
     const MASTER_USER = 'master';
     const MASTER_PASSWORD = 'kappa2024';
+    
+    // GitHub configuration for triggering Actions
+    const GITHUB_CONFIG = {
+      owner: 'kphayato',
+      repo: 'kappa-tracker',
+      workflow_id: 'scrape.yml',
+      token: localStorage.getItem('github_token') || '' // トークンをlocalStorageに保存
+    };
 
     // User roles
     const ROLES = {
@@ -2009,8 +2022,96 @@
       updateSummaryStats();
       updateNextCheckTime();
       
+      // Show data collection button only for Owner/Master
+      if (isMasterOrOwner()) {
+        document.getElementById('dataCollectionButtons').style.display = 'block';
+      }
+      
       // Update next check time every minute
       setInterval(updateNextCheckTime, 60000);
+    }
+
+    // Trigger GitHub Actions workflow
+    async function triggerDataCollection() {
+      // Check permissions
+      if (!isMasterOrOwner()) {
+        alert('⚠️ この機能はOwnerまたはMasterアカウントのみ使用できます');
+        return;
+      }
+      
+      // Check if token is configured
+      let token = GITHUB_CONFIG.token;
+      
+      if (!token || token === '') {
+        token = prompt('🔑 GitHub Personal Access Token を入力してください\n\n初回のみ必要です。入力後、ブラウザに保存されます。\n\n取得方法:\n1. GitHub → Settings → Developer settings\n2. Personal access tokens → Tokens (classic)\n3. Generate new token\n4. repo + workflow にチェック\n5. トークンをコピー');
+        
+        if (!token) {
+          return;
+        }
+        
+        // Save token to localStorage
+        localStorage.setItem('github_token', token);
+        GITHUB_CONFIG.token = token;
+      }
+
+      if (!confirm('🔄 最新データの収集を開始しますか？\n\n・全店舗のデータを収集します\n・完了まで約5分かかります\n・完了後、ページをリロードしてください')) {
+        return;
+      }
+
+      const loadingMsg = document.createElement('div');
+      loadingMsg.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #132f4c; border: 2px solid #26c485; border-radius: 20px; padding: 30px; z-index: 10000; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.5);';
+      loadingMsg.innerHTML = `
+        <div style="font-size: 3rem; margin-bottom: 20px;">🔄</div>
+        <div style="font-size: 1.2rem; font-weight: 700; margin-bottom: 10px;">データ収集を開始しています...</div>
+        <div style="font-size: 0.9rem; color: #8fadc7;">GitHub Actions を起動中</div>
+      `;
+      document.body.appendChild(loadingMsg);
+
+      try {
+        const response = await fetch(
+          `https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/actions/workflows/${GITHUB_CONFIG.workflow_id}/dispatches`,
+          {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/vnd.github.v3+json',
+              'Authorization': `Bearer ${token}`,
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              ref: 'main'
+            })
+          }
+        );
+
+        document.body.removeChild(loadingMsg);
+
+        if (response.status === 204) {
+          alert('✅ データ収集を開始しました！\n\n⏰ 完了まで約5分かかります\n\n完了後の手順:\n1. ページをリロード（F5 または Command+R）\n2. 最新データが表示されます\n\n進行状況はGitHubの「Actions」タブで確認できます');
+        } else if (response.status === 404) {
+          alert('❌ エラー: ワークフローが見つかりません\n\nGitHub設定を確認してください:\n- リポジトリ名: ' + GITHUB_CONFIG.repo + '\n- ワークフロー: ' + GITHUB_CONFIG.workflow_id);
+        } else if (response.status === 401) {
+          // Token is invalid, clear it
+          localStorage.removeItem('github_token');
+          GITHUB_CONFIG.token = '';
+          alert('❌ エラー: 認証に失敗しました\n\nPersonal Access Token が正しくありません。\n\n次回クリック時に再入力してください。\n\n必要な権限:\n- repo\n- workflow');
+        } else {
+          const errorData = await response.json();
+          alert('❌ エラーが発生しました\n\nステータス: ' + response.status + '\n詳細: ' + (errorData.message || '不明なエラー'));
+        }
+      } catch (error) {
+        if (document.body.contains(loadingMsg)) {
+          document.body.removeChild(loadingMsg);
+        }
+        alert('❌ 通信エラー\n\n' + error.message + '\n\nインターネット接続を確認してください');
+        console.error('GitHub Actions trigger error:', error);
+      }
+    }
+
+    // Clear saved GitHub token (for settings)
+    function clearGitHubToken() {
+      localStorage.removeItem('github_token');
+      GITHUB_CONFIG.token = '';
+      alert('✅ GitHub Token を削除しました\n\n次回「最新データを取得」ボタンをクリックしたときに再入力が必要です');
     }
 
     // Generate test data for demonstration
