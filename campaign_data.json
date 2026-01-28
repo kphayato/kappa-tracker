@@ -1,0 +1,163 @@
+{
+  "last_updated": "2026-01-28T02:53:58.089610",
+  "total_stores": 12,
+  "successful": 12,
+  "stores": [
+    {
+      "id": "ushiku",
+      "name": "牛久店",
+      "region": "茨城",
+      "url": "https://kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-16",
+        "remaining": 3,
+        "timestamp": "2026-01-28T02:53:20.098632",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "tsuchiura",
+      "name": "土浦店",
+      "region": "茨城",
+      "url": "https://tsuchiura.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-08",
+        "remaining": 3,
+        "timestamp": "2026-01-28T02:53:23.901437",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "moriya",
+      "name": "守谷店",
+      "region": "茨城",
+      "url": "https://moriya.kappaseitai.com",
+      "data": {
+        "deadline": "2026-01-05",
+        "remaining": 3,
+        "timestamp": "2026-01-28T02:53:27.349532",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "hitachinaka",
+      "name": "ひたちなか店",
+      "region": "茨城",
+      "url": "https://hitachinaka.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-12",
+        "remaining": 3,
+        "timestamp": "2026-01-28T02:53:30.848568",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "hitachi",
+      "name": "日立店",
+      "region": "茨城",
+      "url": "https://hitachi.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 4,
+        "timestamp": "2026-01-28T02:53:34.311005",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "tsukuba",
+      "name": "つくば桜店",
+      "region": "茨城",
+      "url": "https://tsukuba.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-24",
+        "remaining": null,
+        "timestamp": "2026-01-28T02:53:37.748122",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "koga",
+      "name": "古河店",
+      "region": "茨城",
+      "url": "https://koga.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 5,
+        "timestamp": "2026-01-28T02:53:41.094442",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "mito",
+      "name": "水戸店",
+      "region": "茨城",
+      "url": "https://mito.kappaseitai.com",
+      "data": {
+        "deadline": "2026-01-23",
+        "remaining": 2,
+        "timestamp": "2026-01-28T02:53:44.424846",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "asahikawa",
+      "name": "旭川店",
+      "region": "北海道",
+      "url": "https://asahikawa.kappaseitai.com",
+      "data": {
+        "deadline": "2026-01-25",
+        "remaining": 3,
+        "timestamp": "2026-01-28T02:53:48.216569",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "sapporonishioka",
+      "name": "札幌西岡店",
+      "region": "北海道",
+      "url": "https://sapporonishioka.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-20",
+        "remaining": 3,
+        "timestamp": "2026-01-28T02:53:51.531210",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "higashikuyakusyo",
+      "name": "東区役所前店",
+      "region": "北海道",
+      "url": "https://higashikuyakusyo.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 7,
+        "timestamp": "2026-01-28T02:53:54.579311",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "obihiro",
+      "name": "帯広店",
+      "region": "北海道",
+      "url": "https://obihiro.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-09",
+        "remaining": 3,
+        "timestamp": "2026-01-28T02:53:58.088666",
+        "success": true
+      },
+      "status": "success"
+    }
+  ]
+}
