@@ -31,25 +31,3 @@ jobs:
           git add campaign_data.json
           git commit -m "Update data" || exit 0
           git push
-```
-
-4. 下にスクロールして **「Commit changes」** をクリック
-
----
-
-### **ステップ2: scraper.py を確認**
-
-1. GitHubで `scraper.py` を開く
-2. ファイルがあることを確認
-3. もしない場合は、ダウンロードしたファイルをアップロード
-
----
-
-### **ステップ3: requirements.txt を確認**
-
-1. GitHubで `requirements.txt` を開く
-2. 中身が以下になっているか確認：
-```
-requests==2.31.0
-beautifulsoup4==4.12.2
-lxml==4.9.3
