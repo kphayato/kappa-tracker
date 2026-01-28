@@ -31,4 +31,3 @@ jobs:
           git add campaign_data.json
           git commit -m "Update data" || exit 0
           git push
-
