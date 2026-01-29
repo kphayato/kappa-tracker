@@ -3,342 +3,406 @@
     "id": "ushiku",
     "name": "牛久店",
     "region": "茨城",
-    "url": "https://kappaseitai.com"
+    "url": "https://kappaseitai.com",
+    "active": true
   },
   {
     "id": "tsuchiura",
     "name": "土浦店",
     "region": "茨城",
-    "url": "https://tsuchiura.kappaseitai.com"
+    "url": "https://tsuchiura.kappaseitai.com",
+    "active": true
   },
   {
     "id": "moriya",
     "name": "守谷店",
     "region": "茨城",
-    "url": "https://moriya.kappaseitai.com"
+    "url": "https://moriya.kappaseitai.com",
+    "active": true
   },
   {
     "id": "hitachinaka",
     "name": "ひたちなか店",
     "region": "茨城",
-    "url": "https://hitachinaka.kappaseitai.com"
+    "url": "https://hitachinaka.kappaseitai.com",
+    "active": true
   },
   {
     "id": "hitachi",
     "name": "日立店",
     "region": "茨城",
-    "url": "https://hitachi.kappaseitai.com"
+    "url": "https://hitachi.kappaseitai.com",
+    "active": true
   },
   {
     "id": "tsukuba",
     "name": "つくば桜店",
     "region": "茨城",
-    "url": "https://tsukuba.kappaseitai.com"
+    "url": "https://tsukuba.kappaseitai.com",
+    "active": true
   },
   {
     "id": "koga",
     "name": "古河店",
     "region": "茨城",
-    "url": "https://koga.kappaseitai.com"
+    "url": "https://koga.kappaseitai.com",
+    "active": true
   },
   {
     "id": "mito",
     "name": "水戸店",
     "region": "茨城",
-    "url": "https://mito.kappaseitai.com"
+    "url": "https://mito.kappaseitai.com",
+    "active": true
   },
   {
     "id": "asahikawa",
     "name": "旭川店",
     "region": "北海道",
-    "url": "https://asahikawa.kappaseitai.com"
+    "url": "https://asahikawa.kappaseitai.com",
+    "active": true
   },
   {
     "id": "sapporonishioka",
     "name": "札幌西岡店",
     "region": "北海道",
-    "url": "https://sapporonishioka.kappaseitai.com"
+    "url": "https://sapporonishioka.kappaseitai.com",
+    "active": true
   },
   {
     "id": "higashikuyakusyo",
     "name": "東区役所前店",
     "region": "北海道",
-    "url": "https://higashikuyakusyo.kappaseitai.com"
+    "url": "https://higashikuyakusyo.kappaseitai.com",
+    "active": true
   },
   {
     "id": "obihiro",
     "name": "帯広店",
     "region": "北海道",
-    "url": "https://obihiro.kappaseitai.com"
+    "url": "https://obihiro.kappaseitai.com",
+    "active": true
   },
   {
     "id": "morioka",
     "name": "盛岡店",
     "region": "岩手",
-    "url": "https://morioka.kappaseitai.com"
+    "url": "https://morioka.kappaseitai.com",
+    "active": true
   },
   {
     "id": "sendai",
     "name": "仙台六丁の目店",
     "region": "宮城",
-    "url": "https://sendai.kappaseitai.com"
+    "url": "https://sendai.kappaseitai.com",
+    "active": true
   },
   {
     "id": "tomiya",
     "name": "富谷店",
     "region": "宮城",
-    "url": "https://tomiya.kappaseitai.com"
+    "url": "https://tomiya.kappaseitai.com",
+    "active": true
   },
   {
     "id": "dainohara",
     "name": "台原店",
     "region": "宮城",
-    "url": "https://dainohara.kappaseitai.com"
+    "url": "https://dainohara.kappaseitai.com",
+    "active": true
   },
   {
     "id": "koriyama",
     "name": "郡山店",
     "region": "福島",
-    "url": "https://koriyama.kappaseitai.com"
+    "url": "https://koriyama.kappaseitai.com",
+    "active": true
   },
   {
     "id": "iwaki",
     "name": "いわき店",
     "region": "福島",
-    "url": "https://iwaki.kappaseitai.com"
+    "url": "https://iwaki.kappaseitai.com",
+    "active": true
   },
   {
     "id": "fukushima",
     "name": "福島店",
     "region": "福島",
-    "url": "https://fukushima.kappaseitai.com"
+    "url": "https://fukushima.kappaseitai.com",
+    "active": true
   },
   {
     "id": "tochigi",
     "name": "栃木店",
     "region": "栃木",
-    "url": "https://tochigi.kappaseitai.com"
+    "url": "https://tochigi.kappaseitai.com",
+    "active": true
   },
   {
     "id": "utsunomiya",
     "name": "宇都宮店",
     "region": "栃木",
-    "url": "https://utsunomiya.kappaseitai.com"
+    "url": "https://utsunomiya.kappaseitai.com",
+    "active": true
   },
   {
     "id": "oyama",
     "name": "小山店",
     "region": "栃木",
-    "url": "https://oyama.kappaseitai.com"
+    "url": "https://oyama.kappaseitai.com",
+    "active": true
   },
   {
     "id": "ichikawa",
     "name": "市川店",
     "region": "千葉",
-    "url": "https://ichikawa.kappaseitai.com"
+    "url": "https://ichikawa.kappaseitai.com",
+    "active": true
   },
   {
     "id": "inzai",
     "name": "印西店",
     "region": "千葉",
-    "url": "https://inzai.kappaseitai.com"
+    "url": "https://inzai.kappaseitai.com",
+    "active": true
   },
   {
     "id": "kisarazu",
     "name": "木更津店",
     "region": "千葉",
-    "url": "https://kisarazu.kappaseitai.com"
+    "url": "https://kisarazu.kappaseitai.com",
+    "active": true
   },
   {
     "id": "matsudomabashi",
     "name": "松戸馬橋店",
     "region": "千葉",
-    "url": "https://matsudomabashi.kappaseitai.com"
+    "url": "https://matsudomabashi.kappaseitai.com",
+    "active": true
   },
   {
     "id": "kumagaya",
     "name": "熊谷店",
     "region": "埼玉",
-    "url": "https://kumagaya.kappaseitai.com"
+    "url": "https://kumagaya.kappaseitai.com",
+    "active": true
   },
   {
     "id": "azabu10ban",
     "name": "PT麻布十番駅前整骨院",
     "region": "東京",
-    "url": "https://azabu10ban.kappaseitai.com"
+    "url": "https://azabu10ban.kappaseitai.com",
+    "active": true
   },
   {
     "id": "nippori",
     "name": "日暮里駅前店",
     "region": "東京",
-    "url": "https://nippori.kappaseitai.com"
+    "url": "https://nippori.kappaseitai.com",
+    "active": true
   },
   {
     "id": "ikuta",
     "name": "川崎生田店",
     "region": "神奈川",
-    "url": "https://ikuta.kappaseitai.com"
+    "url": "https://ikuta.kappaseitai.com",
+    "active": true
   },
   {
     "id": "odawara",
     "name": "小田原店",
     "region": "神奈川",
-    "url": "https://odawara.kappaseitai.jp"
+    "url": "https://odawara.kappaseitai.jp",
+    "active": true
   },
   {
     "id": "matsumoto",
     "name": "松本店",
     "region": "長野",
-    "url": "https://matsumoto.kappaseitai.com"
+    "url": "https://matsumoto.kappaseitai.com",
+    "active": true
   },
   {
     "id": "nagano",
     "name": "長野店",
     "region": "長野",
-    "url": "https://nagano.kappaseitai.com"
+    "url": "https://nagano.kappaseitai.com",
+    "active": true
   },
   {
     "id": "takaoka",
     "name": "富山高岡店",
     "region": "富山",
-    "url": "https://takaoka.kappaseitai.com"
+    "url": "https://takaoka.kappaseitai.com",
+    "active": true
   },
   {
     "id": "toyama",
     "name": "富山店",
     "region": "富山",
-    "url": "https://toyama.kappaseitai.jp"
+    "url": "https://toyama.kappaseitai.jp",
+    "active": true
   },
   {
     "id": "nonoichi",
     "name": "石川野々市店",
     "region": "石川",
-    "url": "https://nonoichi.kappaseitai.com"
+    "url": "https://nonoichi.kappaseitai.com",
+    "active": true
   },
   {
     "id": "kanazawa",
     "name": "金沢店",
     "region": "石川",
-    "url": "https://kanazawa.kappaseitai.jp"
+    "url": "https://kanazawa.kappaseitai.jp",
+    "active": true
   },
   {
     "id": "owariasahi",
     "name": "尾張旭店",
     "region": "愛知",
-    "url": "https://owariasahi.kappaseitai.com"
+    "url": "https://owariasahi.kappaseitai.com",
+    "active": true
   },
   {
     "id": "toyohashi",
     "name": "豊橋店",
     "region": "愛知",
-    "url": "https://toyohashi.kappaseitai.jp"
+    "url": "https://toyohashi.kappaseitai.jp",
+    "active": true
   },
   {
     "id": "kusatsu",
     "name": "草津店",
     "region": "滋賀",
-    "url": "https://kusatsu.kappaseitai.com"
+    "url": "https://kusatsu.kappaseitai.com",
+    "active": true
   },
   {
     "id": "osakafukushima",
     "name": "ふくしま駅前店",
     "region": "大阪",
-    "url": "https://osakafukushima.kappaseitai.com"
+    "url": "https://osakafukushima.kappaseitai.com",
+    "active": true
   },
   {
     "id": "tenjinbashi",
     "name": "天神橋店",
     "region": "大阪",
-    "url": "https://tenjinbashi.kappa-seitai.jp"
+    "url": "https://tenjinbashi.kappa-seitai.jp",
+    "active": true
   },
   {
     "id": "nishiakashi",
     "name": "西明石店",
     "region": "兵庫",
-    "url": "https://nishiakashi.kappaseitai.com"
+    "url": "https://nishiakashi.kappaseitai.com",
+    "active": true
   },
   {
     "id": "naraoji",
     "name": "奈良王寺店",
     "region": "奈良",
-    "url": "https://naraoji.kappaseitai.com"
+    "url": "https://naraoji.kappaseitai.com",
+    "active": true
   },
   {
     "id": "hiroshima",
     "name": "広島光町店",
     "region": "広島",
-    "url": "https://hiroshima.kappaseitai.com"
+    "url": "https://hiroshima.kappaseitai.com",
+    "active": true
   },
   {
     "id": "hiroshimaminami",
     "name": "ゆめタウンみゆき店",
     "region": "広島",
-    "url": "https://hiroshimaminami.kappaseitai.com"
+    "url": "https://hiroshimaminami.kappaseitai.com",
+    "active": true
   },
   {
     "id": "kure",
     "name": "呉駅前店",
     "region": "広島",
-    "url": "https://kure.kappaseitai.com"
+    "url": "https://kure.kappaseitai.com",
+    "active": true
   },
   {
     "id": "hiroshimagion",
     "name": "広島祇園店",
     "region": "広島",
-    "url": "https://hiroshimagion.kappaseitai.com"
+    "url": "https://hiroshimagion.kappaseitai.com",
+    "active": true
   },
   {
     "id": "hatsukaichi",
     "name": "ゆめタウン廿日市店",
     "region": "広島",
-    "url": "https://hatsukaichi.kappaseitai.com"
+    "url": "https://hatsukaichi.kappaseitai.com",
+    "active": true
   },
   {
     "id": "otemon",
     "name": "福岡大手門店",
     "region": "福岡",
-    "url": "https://otemon.kappaseitai.com"
+    "url": "https://otemon.kappaseitai.com",
+    "active": true
   },
   {
     "id": "kitakyushu",
     "name": "北九州店",
     "region": "福岡",
-    "url": "https://kitakyushu.kappaseitai.com"
+    "url": "https://kitakyushu.kappaseitai.com",
+    "active": true
   },
   {
     "id": "kurume",
     "name": "久留米店",
     "region": "福岡",
-    "url": "https://kurume.kappaseitai.com"
+    "url": "https://kurume.kappaseitai.com",
+    "active": true
   },
   {
     "id": "nagamine",
     "name": "長嶺店",
     "region": "熊本",
-    "url": "https://nagamine.kappaseitai.com"
+    "url": "https://nagamine.kappaseitai.com",
+    "active": true
   },
   {
     "id": "kumamotoshimasaki",
     "name": "熊本島崎店",
     "region": "熊本",
-    "url": "https://kumamotoshimasaki.kappaseitai.com"
+    "url": "https://kumamotoshimasaki.kappaseitai.com",
+    "active": true
   },
   {
     "id": "miyazaki",
     "name": "宮崎店",
     "region": "宮崎",
-    "url": "https://miyazaki.kappaseitai.jp"
+    "url": "https://miyazaki.kappaseitai.jp",
+    "active": true
   },
   {
     "id": "kagoshima",
     "name": "鹿児島店",
     "region": "鹿児島",
-    "url": "https://kagoshima.kappaseitai.com"
+    "url": "https://kagoshima.kappaseitai.com",
+    "active": true
   },
   {
     "id": "naha",
     "name": "那覇店",
     "region": "沖縄",
-    "url": "https://naha.kappaseitai.com"
+    "url": "https://naha.kappaseitai.com",
+    "active": true
+  },
+  {
+    "id": "nagasaki",
+    "name": "長崎店",
+    "region": "長崎",
+    "url": "https://nagasaki.kappaseitai.com/",
+    "active": true
   }
 ]
