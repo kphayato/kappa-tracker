@@ -2006,14 +2006,14 @@
     let pendingCampaignFilter = null;
 
     // Initialize
-    function init() {
+    async function init() {
       initUsers();
       if (!checkAuth()) {
         return;
       }
       
       loadStores();
-      loadData();
+      await loadData(); // Wait for data to load from GitHub
       loadScheduleSettings();
       setupFilterButtons();
       renderStoreManagementList();
@@ -2820,8 +2820,50 @@
       }, 100);
     }
 
-    // Load data from localStorage
-    function loadData() {
+    // Load data from GitHub or localStorage
+    async function loadData() {
+      try {
+        // Try to fetch from GitHub first
+        const response = await fetch('https://raw.githubusercontent.com/kphayato/kappa-tracker/main/campaign_data.json');
+        
+        if (response.ok) {
+          const githubData = await response.json();
+          console.log('📥 GitHub からデータを取得しました:', githubData);
+          
+          // Convert GitHub data format to our format
+          githubData.stores.forEach(store => {
+            if (!storeData[store.id]) {
+              storeData[store.id] = { history: [] };
+            }
+            
+            if (store.data && store.data.success) {
+              // Add to history if not already present
+              const existingIndex = storeData[store.id].history.findIndex(
+                h => h.timestamp === store.data.timestamp
+              );
+              
+              if (existingIndex === -1) {
+                storeData[store.id].history.unshift({
+                  timestamp: store.data.timestamp,
+                  deadline: store.data.deadline,
+                  remaining: store.data.remaining,
+                  status: 'updated',
+                  dateChanged: true,
+                  slotsChanged: true
+                });
+              }
+            }
+          });
+          
+          saveData();
+          console.log('✅ データを更新しました');
+          return;
+        }
+      } catch (error) {
+        console.log('⚠️ GitHub からの取得に失敗、ローカルデータを使用:', error);
+      }
+      
+      // Fallback to localStorage
       const saved = localStorage.getItem('kappaAllStores');
       if (saved) {
         storeData = JSON.parse(saved);
