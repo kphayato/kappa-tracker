@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-29T14:11:58.608950",
+  "last_updated": "2026-01-29T14:18:03.578470",
   "total_stores": 57,
   "successful": 51,
   "stores": [
@@ -8,10 +8,11 @@
       "name": "牛久店",
       "region": "茨城",
       "url": "https://kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-05",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:08:01.625697",
+        "timestamp": "2026-01-29T14:13:31.968793",
         "success": true
       },
       "status": "success"
@@ -21,10 +22,11 @@
       "name": "土浦店",
       "region": "茨城",
       "url": "https://tsuchiura.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-07",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:08:07.523702",
+        "timestamp": "2026-01-29T14:13:37.358270",
         "success": true
       },
       "status": "success"
@@ -34,10 +36,11 @@
       "name": "守谷店",
       "region": "茨城",
       "url": "https://moriya.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:08:13.241298",
+        "timestamp": "2026-01-29T14:13:43.019326",
         "success": true
       },
       "status": "success"
@@ -47,10 +50,11 @@
       "name": "ひたちなか店",
       "region": "茨城",
       "url": "https://hitachinaka.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:08:16.611633",
+        "timestamp": "2026-01-29T14:13:46.507942",
         "success": true
       },
       "status": "success"
@@ -60,10 +64,11 @@
       "name": "日立店",
       "region": "茨城",
       "url": "https://hitachi.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 1,
-        "timestamp": "2026-01-29T14:08:22.857764",
+        "timestamp": "2026-01-29T14:13:52.217027",
         "success": true
       },
       "status": "success"
@@ -73,10 +78,11 @@
       "name": "つくば桜店",
       "region": "茨城",
       "url": "https://tsukuba.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": null,
-        "timestamp": "2026-01-29T14:08:28.469778",
+        "timestamp": "2026-01-29T14:13:58.085750",
         "success": true
       },
       "status": "success"
@@ -86,10 +92,11 @@
       "name": "古河店",
       "region": "茨城",
       "url": "https://koga.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-04",
         "remaining": 4,
-        "timestamp": "2026-01-29T14:08:31.784129",
+        "timestamp": "2026-01-29T14:14:01.389785",
         "success": true
       },
       "status": "success"
@@ -99,10 +106,11 @@
       "name": "水戸店",
       "region": "茨城",
       "url": "https://mito.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:08:34.906755",
+        "timestamp": "2026-01-29T14:14:05.054536",
         "success": true
       },
       "status": "success"
@@ -112,10 +120,11 @@
       "name": "旭川店",
       "region": "北海道",
       "url": "https://asahikawa.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 1,
-        "timestamp": "2026-01-29T14:08:41.399362",
+        "timestamp": "2026-01-29T14:14:11.440850",
         "success": true
       },
       "status": "success"
@@ -125,10 +134,11 @@
       "name": "札幌西岡店",
       "region": "北海道",
       "url": "https://sapporonishioka.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:08:44.785478",
+        "timestamp": "2026-01-29T14:14:14.666051",
         "success": true
       },
       "status": "success"
@@ -138,10 +148,11 @@
       "name": "東区役所前店",
       "region": "北海道",
       "url": "https://higashikuyakusyo.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-01",
         "remaining": 4,
-        "timestamp": "2026-01-29T14:08:47.988590",
+        "timestamp": "2026-01-29T14:14:18.129890",
         "success": true
       },
       "status": "success"
@@ -151,10 +162,11 @@
       "name": "帯広店",
       "region": "北海道",
       "url": "https://obihiro.kappaseitai.com",
+      "active": true,
       "data": {
-        "deadline": "2027-01-05",
+        "deadline": "2026-01-31",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:08:51.363574",
+        "timestamp": "2026-01-29T14:14:21.186142",
         "success": true
       },
       "status": "success"
@@ -164,10 +176,11 @@
       "name": "盛岡店",
       "region": "岩手",
       "url": "https://morioka.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 4,
-        "timestamp": "2026-01-29T14:08:54.456408",
+        "timestamp": "2026-01-29T14:14:24.606905",
         "success": true
       },
       "status": "success"
@@ -177,10 +190,11 @@
       "name": "仙台六丁の目店",
       "region": "宮城",
       "url": "https://sendai.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:08:59.653769",
+        "timestamp": "2026-01-29T14:14:30.414385",
         "success": true
       },
       "status": "success"
@@ -190,10 +204,11 @@
       "name": "富谷店",
       "region": "宮城",
       "url": "https://tomiya.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": null,
-        "timestamp": "2026-01-29T14:09:05.429570",
+        "timestamp": "2026-01-29T14:14:36.577543",
         "success": true
       },
       "status": "success"
@@ -203,10 +218,11 @@
       "name": "台原店",
       "region": "宮城",
       "url": "https://dainohara.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:09:08.412321",
+        "timestamp": "2026-01-29T14:14:40.179354",
         "success": true
       },
       "status": "success"
@@ -216,10 +232,11 @@
       "name": "郡山店",
       "region": "福島",
       "url": "https://koriyama.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:09:11.501965",
+        "timestamp": "2026-01-29T14:14:43.511267",
         "success": true
       },
       "status": "success"
@@ -229,10 +246,11 @@
       "name": "いわき店",
       "region": "福島",
       "url": "https://iwaki.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:09:14.593967",
+        "timestamp": "2026-01-29T14:14:46.895400",
         "success": true
       },
       "status": "success"
@@ -242,10 +260,11 @@
       "name": "福島店",
       "region": "福島",
       "url": "https://fukushima.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 5,
-        "timestamp": "2026-01-29T14:09:17.784103",
+        "timestamp": "2026-01-29T14:14:49.979813",
         "success": true
       },
       "status": "success"
@@ -255,10 +274,11 @@
       "name": "栃木店",
       "region": "栃木",
       "url": "https://tochigi.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-04",
         "remaining": 4,
-        "timestamp": "2026-01-29T14:09:23.846728",
+        "timestamp": "2026-01-29T14:14:56.083309",
         "success": true
       },
       "status": "success"
@@ -268,10 +288,11 @@
       "name": "宇都宮店",
       "region": "栃木",
       "url": "https://utsunomiya.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:09:29.563835",
+        "timestamp": "2026-01-29T14:15:01.817074",
         "success": true
       },
       "status": "success"
@@ -281,10 +302,11 @@
       "name": "小山店",
       "region": "栃木",
       "url": "https://oyama.kappaseitai.com",
+      "active": true,
       "data": {
-        "deadline": "2027-01-28",
+        "deadline": "2026-01-28",
         "remaining": 1,
-        "timestamp": "2026-01-29T14:09:34.995393",
+        "timestamp": "2026-01-29T14:15:07.808439",
         "success": true
       },
       "status": "success"
@@ -294,10 +316,11 @@
       "name": "市川店",
       "region": "千葉",
       "url": "https://ichikawa.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:09:40.383885",
+        "timestamp": "2026-01-29T14:15:14.332511",
         "success": true
       },
       "status": "success"
@@ -307,10 +330,11 @@
       "name": "印西店",
       "region": "千葉",
       "url": "https://inzai.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-30",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:09:46.538287",
+        "timestamp": "2026-01-29T14:15:24.551007",
         "success": true
       },
       "status": "success"
@@ -320,10 +344,11 @@
       "name": "木更津店",
       "region": "千葉",
       "url": "https://kisarazu.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-01",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:09:49.680663",
+        "timestamp": "2026-01-29T14:15:27.619019",
         "success": true
       },
       "status": "success"
@@ -333,10 +358,11 @@
       "name": "松戸馬橋店",
       "region": "千葉",
       "url": "https://matsudomabashi.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-03",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:09:52.619482",
+        "timestamp": "2026-01-29T14:15:31.092228",
         "success": true
       },
       "status": "success"
@@ -346,10 +372,11 @@
       "name": "熊谷店",
       "region": "埼玉",
       "url": "https://kumagaya.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:09:57.986972",
+        "timestamp": "2026-01-29T14:15:41.432415",
         "success": true
       },
       "status": "success"
@@ -359,10 +386,11 @@
       "name": "PT麻布十番駅前整骨院",
       "region": "東京",
       "url": "https://azabu10ban.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:10:03.412746",
+        "timestamp": "2026-01-29T14:15:47.829422",
         "success": true
       },
       "status": "success"
@@ -372,10 +400,11 @@
       "name": "日暮里駅前店",
       "region": "東京",
       "url": "https://nippori.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:10:08.412687",
+        "timestamp": "2026-01-29T14:15:54.455073",
         "success": true
       },
       "status": "success"
@@ -385,10 +414,11 @@
       "name": "川崎生田店",
       "region": "神奈川",
       "url": "https://ikuta.kappaseitai.com",
+      "active": true,
       "data": {
-        "deadline": "2027-01-27",
+        "deadline": "2026-01-27",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:10:11.859489",
+        "timestamp": "2026-01-29T14:15:57.814431",
         "success": true
       },
       "status": "success"
@@ -398,6 +428,7 @@
       "name": "小田原店",
       "region": "神奈川",
       "url": "https://odawara.kappaseitai.jp",
+      "active": true,
       "data": null,
       "status": "no_data"
     },
@@ -406,10 +437,11 @@
       "name": "松本店",
       "region": "長野",
       "url": "https://matsumoto.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-01",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:10:19.837923",
+        "timestamp": "2026-01-29T14:16:06.541653",
         "success": true
       },
       "status": "success"
@@ -419,10 +451,11 @@
       "name": "長野店",
       "region": "長野",
       "url": "https://nagano.kappaseitai.com",
+      "active": true,
       "data": {
-        "deadline": "2026-10-19",
+        "deadline": "2026-03-24",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:10:22.786212",
+        "timestamp": "2026-01-29T14:16:09.841892",
         "success": true
       },
       "status": "success"
@@ -432,10 +465,11 @@
       "name": "富山高岡店",
       "region": "富山",
       "url": "https://takaoka.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:10:25.924720",
+        "timestamp": "2026-01-29T14:16:13.495117",
         "success": true
       },
       "status": "success"
@@ -445,6 +479,7 @@
       "name": "富山店",
       "region": "富山",
       "url": "https://toyama.kappaseitai.jp",
+      "active": true,
       "data": null,
       "status": "no_data"
     },
@@ -453,10 +488,11 @@
       "name": "石川野々市店",
       "region": "石川",
       "url": "https://nonoichi.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:10:33.975431",
+        "timestamp": "2026-01-29T14:16:25.813162",
         "success": true
       },
       "status": "success"
@@ -466,6 +502,7 @@
       "name": "金沢店",
       "region": "石川",
       "url": "https://kanazawa.kappaseitai.jp",
+      "active": true,
       "data": null,
       "status": "no_data"
     },
@@ -474,10 +511,11 @@
       "name": "尾張旭店",
       "region": "愛知",
       "url": "https://owariasahi.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 5,
-        "timestamp": "2026-01-29T14:10:40.662821",
+        "timestamp": "2026-01-29T14:16:34.498109",
         "success": true
       },
       "status": "success"
@@ -487,6 +525,7 @@
       "name": "豊橋店",
       "region": "愛知",
       "url": "https://toyohashi.kappaseitai.jp",
+      "active": true,
       "data": null,
       "status": "no_data"
     },
@@ -495,10 +534,11 @@
       "name": "草津店",
       "region": "滋賀",
       "url": "https://kusatsu.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:10:49.224615",
+        "timestamp": "2026-01-29T14:16:43.946453",
         "success": true
       },
       "status": "success"
@@ -508,10 +548,11 @@
       "name": "ふくしま駅前店",
       "region": "大阪",
       "url": "https://osakafukushima.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:10:52.157797",
+        "timestamp": "2026-01-29T14:16:47.215527",
         "success": true
       },
       "status": "success"
@@ -521,6 +562,7 @@
       "name": "天神橋店",
       "region": "大阪",
       "url": "https://tenjinbashi.kappa-seitai.jp",
+      "active": true,
       "data": null,
       "status": "no_data"
     },
@@ -529,10 +571,11 @@
       "name": "西明石店",
       "region": "兵庫",
       "url": "https://nishiakashi.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 5,
-        "timestamp": "2026-01-29T14:11:00.463932",
+        "timestamp": "2026-01-29T14:16:56.591807",
         "success": true
       },
       "status": "success"
@@ -542,10 +585,11 @@
       "name": "奈良王寺店",
       "region": "奈良",
       "url": "https://naraoji.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:11:03.545434",
+        "timestamp": "2026-01-29T14:17:00.206057",
         "success": true
       },
       "status": "success"
@@ -555,10 +599,11 @@
       "name": "広島光町店",
       "region": "広島",
       "url": "https://hiroshima.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 4,
-        "timestamp": "2026-01-29T14:11:08.237209",
+        "timestamp": "2026-01-29T14:17:05.689706",
         "success": true
       },
       "status": "success"
@@ -568,10 +613,11 @@
       "name": "ゆめタウンみゆき店",
       "region": "広島",
       "url": "https://hiroshimaminami.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-01",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:11:13.971560",
+        "timestamp": "2026-01-29T14:17:12.235221",
         "success": true
       },
       "status": "success"
@@ -581,10 +627,11 @@
       "name": "呉駅前店",
       "region": "広島",
       "url": "https://kure.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:11:17.066593",
+        "timestamp": "2026-01-29T14:17:15.614256",
         "success": true
       },
       "status": "success"
@@ -594,10 +641,11 @@
       "name": "広島祇園店",
       "region": "広島",
       "url": "https://hiroshimagion.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:11:20.144267",
+        "timestamp": "2026-01-29T14:17:18.959032",
         "success": true
       },
       "status": "success"
@@ -607,10 +655,11 @@
       "name": "ゆめタウン廿日市店",
       "region": "広島",
       "url": "https://hatsukaichi.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-01",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:11:23.242240",
+        "timestamp": "2026-01-29T14:17:22.552094",
         "success": true
       },
       "status": "success"
@@ -620,10 +669,11 @@
       "name": "福岡大手門店",
       "region": "福岡",
       "url": "https://otemon.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:11:28.318838",
+        "timestamp": "2026-01-29T14:17:28.838098",
         "success": true
       },
       "status": "success"
@@ -633,10 +683,11 @@
       "name": "北九州店",
       "region": "福岡",
       "url": "https://kitakyushu.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:11:33.481883",
+        "timestamp": "2026-01-29T14:17:35.148046",
         "success": true
       },
       "status": "success"
@@ -646,10 +697,11 @@
       "name": "久留米店",
       "region": "福岡",
       "url": "https://kurume.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:11:38.484722",
+        "timestamp": "2026-01-29T14:17:41.049737",
         "success": true
       },
       "status": "success"
@@ -659,10 +711,11 @@
       "name": "長嶺店",
       "region": "熊本",
       "url": "https://nagamine.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:11:43.855620",
+        "timestamp": "2026-01-29T14:17:47.479083",
         "success": true
       },
       "status": "success"
@@ -672,10 +725,11 @@
       "name": "熊本島崎店",
       "region": "熊本",
       "url": "https://kumamotoshimasaki.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:11:46.940806",
+        "timestamp": "2026-01-29T14:17:50.819932",
         "success": true
       },
       "status": "success"
@@ -685,6 +739,7 @@
       "name": "宮崎店",
       "region": "宮崎",
       "url": "https://miyazaki.kappaseitai.jp",
+      "active": true,
       "data": null,
       "status": "no_data"
     },
@@ -693,10 +748,11 @@
       "name": "鹿児島店",
       "region": "鹿児島",
       "url": "https://kagoshima.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-02-02",
         "remaining": 3,
-        "timestamp": "2026-01-29T14:11:52.906647",
+        "timestamp": "2026-01-29T14:17:57.219286",
         "success": true
       },
       "status": "success"
@@ -706,10 +762,11 @@
       "name": "那覇店",
       "region": "沖縄",
       "url": "https://naha.kappaseitai.com",
+      "active": true,
       "data": {
         "deadline": "2026-01-31",
         "remaining": 2,
-        "timestamp": "2026-01-29T14:11:58.607981",
+        "timestamp": "2026-01-29T14:18:03.577431",
         "success": true
       },
       "status": "success"
