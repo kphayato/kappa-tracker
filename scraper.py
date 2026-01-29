@@ -132,37 +132,72 @@ def extract_campaign_data(html_content: str) -> Optional[Dict]:
     """
     HTMLからキャンペーン情報を抽出
     
-    パターン:
-    - "1月31日まで" または "○月○日まで"
-    - "残り○名"
+    改善版：キャンペーン関連のコンテキスト内でのみデータを抽出
     """
     try:
         soup = BeautifulSoup(html_content, 'html.parser')
         text = soup.get_text()
         
-        # 日付を検索（例: 1月31日、1月31日まで、○月○日迄）
-        date_pattern = r'(\d+)月(\d+)日(?:まで|迄)?'
-        date_match = re.search(date_pattern, text)
+        # キャンペーン関連キーワード
+        campaign_keywords = [
+            'キャンペーン', 'ご予約の方に限り', '先着', '予約多数',
+            '初回限定', '期間限定', 'お得', '特別価格', 'までに'
+        ]
         
+        # キャンペーンセクションを探す
+        campaign_sections = []
+        for keyword in campaign_keywords:
+            if keyword in text:
+                # キーワードの位置を見つける
+                index = text.find(keyword)
+                # 前後400文字を取得（キャンペーン情報が含まれる範囲）
+                start = max(0, index - 200)
+                end = min(len(text), index + 400)
+                section = text[start:end]
+                campaign_sections.append(section)
+        
+        # キャンペーンセクションが見つからない場合は全体を対象
+        if not campaign_sections:
+            campaign_sections = [text]
+        
+        # 全セクションから日付と人数を抽出
+        all_dates = []
+        all_remaining = []
+        
+        for section in campaign_sections:
+            # 日付を検索（例: 1月31日、1月31日まで、○月○日迄）
+            date_pattern = r'(\d+)月(\d+)日(?:まで|迄)?'
+            date_matches = re.finditer(date_pattern, section)
+            
+            for match in date_matches:
+                month = int(match.group(1))
+                day = int(match.group(2))
+                year = datetime.now().year
+                
+                # 月が過去の場合は来年
+                current_month = datetime.now().month
+                if month < current_month or (month == current_month and day < datetime.now().day):
+                    year += 1
+                
+                date_obj = datetime(year, month, day)
+                all_dates.append(date_obj)
+            
+            # 残り人数を検索（例: 残り3名、一残り3名、あと3名、→残り3名）
+            remaining_pattern = r'[→一ー\s]*(?:残り|あと)[\s]*(\d+)名'
+            remaining_matches = re.finditer(remaining_pattern, section)
+            
+            for match in remaining_matches:
+                remaining = int(match.group(1))
+                all_remaining.append(remaining)
+        
+        # 最新の日付を選択
         deadline = None
-        if date_match:
-            month = int(date_match.group(1))
-            day = int(date_match.group(2))
-            year = datetime.now().year
-            
-            # 月が過去の場合は来年
-            if month < datetime.now().month:
-                year += 1
-            
-            deadline = f"{year}-{month:02d}-{day:02d}"
+        if all_dates:
+            latest_date = max(all_dates)
+            deadline = latest_date.strftime("%Y-%m-%d")
         
-        # 残り人数を検索（例: 残り3名、一残り3名、あと3名）
-        remaining_pattern = r'[一ー\s]*(?:残り|あと)[\s]*(\d+)名'
-        remaining_match = re.search(remaining_pattern, text)
-        
-        remaining = None
-        if remaining_match:
-            remaining = int(remaining_match.group(1))
+        # 残り人数（最初に見つかったものを使用）
+        remaining = all_remaining[0] if all_remaining else None
         
         if deadline or remaining is not None:
             return {
