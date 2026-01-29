@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-01-29T02:41:20.747884",
-  "total_stores": 12,
-  "successful": 12,
+  "last_updated": "2026-01-29T06:47:53.605334",
+  "total_stores": 57,
+  "successful": 51,
   "stores": [
     {
       "id": "ushiku",
@@ -11,7 +11,7 @@
       "data": {
         "deadline": "2026-12-16",
         "remaining": 3,
-        "timestamp": "2026-01-29T02:40:42.100742",
+        "timestamp": "2026-01-29T06:44:37.331541",
         "success": true
       },
       "status": "success"
@@ -24,7 +24,7 @@
       "data": {
         "deadline": "2026-12-08",
         "remaining": 3,
-        "timestamp": "2026-01-29T02:40:45.717057",
+        "timestamp": "2026-01-29T06:44:40.704474",
         "success": true
       },
       "status": "success"
@@ -37,7 +37,7 @@
       "data": {
         "deadline": "2026-01-05",
         "remaining": 3,
-        "timestamp": "2026-01-29T02:40:49.277096",
+        "timestamp": "2026-01-29T06:44:44.409689",
         "success": true
       },
       "status": "success"
@@ -50,7 +50,7 @@
       "data": {
         "deadline": "2026-12-12",
         "remaining": 3,
-        "timestamp": "2026-01-29T02:40:52.560451",
+        "timestamp": "2026-01-29T06:44:47.846674",
         "success": true
       },
       "status": "success"
@@ -63,7 +63,7 @@
       "data": {
         "deadline": "2026-12-02",
         "remaining": 2,
-        "timestamp": "2026-01-29T02:40:56.128175",
+        "timestamp": "2026-01-29T06:44:51.286479",
         "success": true
       },
       "status": "success"
@@ -76,7 +76,7 @@
       "data": {
         "deadline": "2026-12-24",
         "remaining": null,
-        "timestamp": "2026-01-29T02:40:59.756335",
+        "timestamp": "2026-01-29T06:44:54.994918",
         "success": true
       },
       "status": "success"
@@ -89,7 +89,7 @@
       "data": {
         "deadline": "2026-12-02",
         "remaining": 4,
-        "timestamp": "2026-01-29T02:41:03.269576",
+        "timestamp": "2026-01-29T06:44:58.291710",
         "success": true
       },
       "status": "success"
@@ -102,7 +102,7 @@
       "data": {
         "deadline": "2026-01-23",
         "remaining": 2,
-        "timestamp": "2026-01-29T02:41:06.777683",
+        "timestamp": "2026-01-29T06:45:01.653528",
         "success": true
       },
       "status": "success"
@@ -115,7 +115,7 @@
       "data": {
         "deadline": "2026-01-25",
         "remaining": 2,
-        "timestamp": "2026-01-29T02:41:10.486077",
+        "timestamp": "2026-01-29T06:45:05.129453",
         "success": true
       },
       "status": "success"
@@ -128,7 +128,7 @@
       "data": {
         "deadline": "2026-12-20",
         "remaining": 3,
-        "timestamp": "2026-01-29T02:41:13.838969",
+        "timestamp": "2026-01-29T06:45:08.400356",
         "success": true
       },
       "status": "success"
@@ -141,7 +141,7 @@
       "data": {
         "deadline": "2026-12-02",
         "remaining": 4,
-        "timestamp": "2026-01-29T02:41:17.162069",
+        "timestamp": "2026-01-29T06:45:11.657489",
         "success": true
       },
       "status": "success"
@@ -154,7 +154,562 @@
       "data": {
         "deadline": "2026-12-09",
         "remaining": 3,
-        "timestamp": "2026-01-29T02:41:20.747066",
+        "timestamp": "2026-01-29T06:45:14.884057",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "morioka",
+      "name": "盛岡店",
+      "region": "岩手",
+      "url": "https://morioka.kappaseitai.com",
+      "data": {
+        "deadline": "2026-01-16",
+        "remaining": 4,
+        "timestamp": "2026-01-29T06:45:18.062166",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "sendai",
+      "name": "仙台六丁の目店",
+      "region": "宮城",
+      "url": "https://sendai.kappaseitai.com",
+      "data": {
+        "deadline": "2026-01-27",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:45:21.396192",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "tomiya",
+      "name": "富谷店",
+      "region": "宮城",
+      "url": "https://tomiya.kappaseitai.com",
+      "data": {
+        "deadline": "2026-01-29",
+        "remaining": null,
+        "timestamp": "2026-01-29T06:45:24.958466",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "dainohara",
+      "name": "台原店",
+      "region": "宮城",
+      "url": "https://dainohara.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-21",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:45:28.004548",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "koriyama",
+      "name": "郡山店",
+      "region": "福島",
+      "url": "https://koriyama.kappaseitai.com",
+      "data": {
+        "deadline": "2026-01-17",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:45:31.328096",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "iwaki",
+      "name": "いわき店",
+      "region": "福島",
+      "url": "https://iwaki.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-27",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:45:34.521519",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "fukushima",
+      "name": "福島店",
+      "region": "福島",
+      "url": "https://fukushima.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 5,
+        "timestamp": "2026-01-29T06:45:37.571177",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "tochigi",
+      "name": "栃木店",
+      "region": "栃木",
+      "url": "https://tochigi.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 4,
+        "timestamp": "2026-01-29T06:45:40.884618",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "utsunomiya",
+      "name": "宇都宮店",
+      "region": "栃木",
+      "url": "https://utsunomiya.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:45:44.321452",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "oyama",
+      "name": "小山店",
+      "region": "栃木",
+      "url": "https://oyama.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-06",
+        "remaining": 1,
+        "timestamp": "2026-01-29T06:45:47.647104",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "ichikawa",
+      "name": "市川店",
+      "region": "千葉",
+      "url": "https://ichikawa.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-08",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:45:52.033974",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "inzai",
+      "name": "印西店",
+      "region": "千葉",
+      "url": "https://inzai.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-05",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:45:55.363766",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "kisarazu",
+      "name": "木更津店",
+      "region": "千葉",
+      "url": "https://kisarazu.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-16",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:45:58.432418",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "matsudomabashi",
+      "name": "松戸馬橋店",
+      "region": "千葉",
+      "url": "https://matsudomabashi.kappaseitai.com",
+      "data": {
+        "deadline": "2026-01-10",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:46:01.424196",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "kumagaya",
+      "name": "熊谷店",
+      "region": "埼玉",
+      "url": "https://kumagaya.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-20",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:46:04.917959",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "azabu10ban",
+      "name": "PT麻布十番駅前整骨院",
+      "region": "東京",
+      "url": "https://azabu10ban.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:46:08.296117",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "nippori",
+      "name": "日暮里駅前店",
+      "region": "東京",
+      "url": "https://nippori.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-03",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:46:15.025887",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "ikuta",
+      "name": "川崎生田店",
+      "region": "神奈川",
+      "url": "https://ikuta.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:46:18.341553",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "odawara",
+      "name": "小田原店",
+      "region": "神奈川",
+      "url": "https://odawara.kappaseitai.jp",
+      "data": null,
+      "status": "no_data"
+    },
+    {
+      "id": "matsumoto",
+      "name": "松本店",
+      "region": "長野",
+      "url": "https://matsumoto.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:46:24.559825",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "nagano",
+      "name": "長野店",
+      "region": "長野",
+      "url": "https://nagano.kappaseitai.com",
+      "data": {
+        "deadline": "2026-03-24",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:46:27.609350",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "takaoka",
+      "name": "富山高岡店",
+      "region": "富山",
+      "url": "https://takaoka.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-03",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:46:34.226818",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "toyama",
+      "name": "富山店",
+      "region": "富山",
+      "url": "https://toyama.kappaseitai.jp",
+      "data": null,
+      "status": "no_data"
+    },
+    {
+      "id": "nonoichi",
+      "name": "石川野々市店",
+      "region": "石川",
+      "url": "https://nonoichi.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-04",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:46:40.451649",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "kanazawa",
+      "name": "金沢店",
+      "region": "石川",
+      "url": "https://kanazawa.kappaseitai.jp",
+      "data": null,
+      "status": "no_data"
+    },
+    {
+      "id": "owariasahi",
+      "name": "尾張旭店",
+      "region": "愛知",
+      "url": "https://owariasahi.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-23",
+        "remaining": 5,
+        "timestamp": "2026-01-29T06:46:49.157013",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "toyohashi",
+      "name": "豊橋店",
+      "region": "愛知",
+      "url": "https://toyohashi.kappaseitai.jp",
+      "data": null,
+      "status": "no_data"
+    },
+    {
+      "id": "kusatsu",
+      "name": "草津店",
+      "region": "滋賀",
+      "url": "https://kusatsu.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-03",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:46:58.025578",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "osakafukushima",
+      "name": "ふくしま駅前店",
+      "region": "大阪",
+      "url": "https://osakafukushima.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-10",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:47:01.265706",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "tenjinbashi",
+      "name": "天神橋店",
+      "region": "大阪",
+      "url": "https://tenjinbashi.kappa-seitai.jp",
+      "data": null,
+      "status": "no_data"
+    },
+    {
+      "id": "nishiakashi",
+      "name": "西明石店",
+      "region": "兵庫",
+      "url": "https://nishiakashi.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 5,
+        "timestamp": "2026-01-29T06:47:07.517377",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "naraoji",
+      "name": "奈良王寺店",
+      "region": "奈良",
+      "url": "https://naraoji.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-05",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:47:10.710457",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "hiroshima",
+      "name": "広島光町店",
+      "region": "広島",
+      "url": "https://hiroshima.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-04",
+        "remaining": 4,
+        "timestamp": "2026-01-29T06:47:14.072395",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "hiroshimaminami",
+      "name": "ゆめタウンみゆき店",
+      "region": "広島",
+      "url": "https://hiroshimaminami.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:47:17.446410",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "kure",
+      "name": "呉駅前店",
+      "region": "広島",
+      "url": "https://kure.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:47:20.635576",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "hiroshimagion",
+      "name": "広島祇園店",
+      "region": "広島",
+      "url": "https://hiroshimagion.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-06",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:47:23.777974",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "hatsukaichi",
+      "name": "ゆめタウン廿日市店",
+      "region": "広島",
+      "url": "https://hatsukaichi.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:47:26.965533",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "otemon",
+      "name": "福岡大手門店",
+      "region": "福岡",
+      "url": "https://otemon.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:47:30.446831",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "kitakyushu",
+      "name": "北九州店",
+      "region": "福岡",
+      "url": "https://kitakyushu.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-05",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:47:33.837224",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "kurume",
+      "name": "久留米店",
+      "region": "福岡",
+      "url": "https://kurume.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-28",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:47:37.250483",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "nagamine",
+      "name": "長嶺店",
+      "region": "熊本",
+      "url": "https://nagamine.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-06",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:47:40.574901",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "kumamotoshimasaki",
+      "name": "熊本島崎店",
+      "region": "熊本",
+      "url": "https://kumamotoshimasaki.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-06",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:47:43.805364",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "miyazaki",
+      "name": "宮崎店",
+      "region": "宮崎",
+      "url": "https://miyazaki.kappaseitai.jp",
+      "data": null,
+      "status": "no_data"
+    },
+    {
+      "id": "kagoshima",
+      "name": "鹿児島店",
+      "region": "鹿児島",
+      "url": "https://kagoshima.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-12",
+        "remaining": 3,
+        "timestamp": "2026-01-29T06:47:50.167244",
+        "success": true
+      },
+      "status": "success"
+    },
+    {
+      "id": "naha",
+      "name": "那覇店",
+      "region": "沖縄",
+      "url": "https://naha.kappaseitai.com",
+      "data": {
+        "deadline": "2026-12-02",
+        "remaining": 2,
+        "timestamp": "2026-01-29T06:47:53.604437",
         "success": true
       },
       "status": "success"
