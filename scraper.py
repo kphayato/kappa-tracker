@@ -37,7 +37,94 @@ STORES = [
     {"id": "higashikuyakusyo", "name": "東区役所前店", "region": "北海道", "url": "https://higashikuyakusyo.kappaseitai.com"},
     {"id": "obihiro", "name": "帯広店", "region": "北海道", "url": "https://obihiro.kappaseitai.com"},
     
-    # 他の店舗も同様に追加...
+    # 岩手県
+    {"id": "morioka", "name": "盛岡店", "region": "岩手", "url": "https://morioka.kappaseitai.com"},
+    
+    # 宮城県
+    {"id": "sendai", "name": "仙台六丁の目店", "region": "宮城", "url": "https://sendai.kappaseitai.com"},
+    {"id": "tomiya", "name": "富谷店", "region": "宮城", "url": "https://tomiya.kappaseitai.com"},
+    {"id": "dainohara", "name": "台原店", "region": "宮城", "url": "https://dainohara.kappaseitai.com"},
+    
+    # 福島県
+    {"id": "koriyama", "name": "郡山店", "region": "福島", "url": "https://koriyama.kappaseitai.com"},
+    {"id": "iwaki", "name": "いわき店", "region": "福島", "url": "https://iwaki.kappaseitai.com"},
+    {"id": "fukushima", "name": "福島店", "region": "福島", "url": "https://fukushima.kappaseitai.com"},
+    
+    # 栃木県
+    {"id": "tochigi", "name": "栃木店", "region": "栃木", "url": "https://tochigi.kappaseitai.com"},
+    {"id": "utsunomiya", "name": "宇都宮店", "region": "栃木", "url": "https://utsunomiya.kappaseitai.com"},
+    {"id": "oyama", "name": "小山店", "region": "栃木", "url": "https://oyama.kappaseitai.com"},
+    
+    # 千葉県
+    {"id": "ichikawa", "name": "市川店", "region": "千葉", "url": "https://ichikawa.kappaseitai.com"},
+    {"id": "inzai", "name": "印西店", "region": "千葉", "url": "https://inzai.kappaseitai.com"},
+    {"id": "kisarazu", "name": "木更津店", "region": "千葉", "url": "https://kisarazu.kappaseitai.com"},
+    {"id": "matsudomabashi", "name": "松戸馬橋店", "region": "千葉", "url": "https://matsudomabashi.kappaseitai.com"},
+    
+    # 埼玉県
+    {"id": "kumagaya", "name": "熊谷店", "region": "埼玉", "url": "https://kumagaya.kappaseitai.com"},
+    
+    # 東京都
+    {"id": "azabu10ban", "name": "PT麻布十番駅前整骨院", "region": "東京", "url": "https://azabu10ban.kappaseitai.com"},
+    {"id": "nippori", "name": "日暮里駅前店", "region": "東京", "url": "https://nippori.kappaseitai.com"},
+    
+    # 神奈川県
+    {"id": "ikuta", "name": "川崎生田店", "region": "神奈川", "url": "https://ikuta.kappaseitai.com"},
+    {"id": "odawara", "name": "小田原店", "region": "神奈川", "url": "https://odawara.kappaseitai.jp"},
+    
+    # 長野県
+    {"id": "matsumoto", "name": "松本店", "region": "長野", "url": "https://matsumoto.kappaseitai.com"},
+    {"id": "nagano", "name": "長野店", "region": "長野", "url": "https://nagano.kappaseitai.com"},
+    
+    # 富山県
+    {"id": "takaoka", "name": "富山高岡店", "region": "富山", "url": "https://takaoka.kappaseitai.com"},
+    {"id": "toyama", "name": "富山店", "region": "富山", "url": "https://toyama.kappaseitai.jp"},
+    
+    # 石川県
+    {"id": "nonoichi", "name": "石川野々市店", "region": "石川", "url": "https://nonoichi.kappaseitai.com"},
+    {"id": "kanazawa", "name": "金沢店", "region": "石川", "url": "https://kanazawa.kappaseitai.jp"},
+    
+    # 愛知県
+    {"id": "owariasahi", "name": "尾張旭店", "region": "愛知", "url": "https://owariasahi.kappaseitai.com"},
+    {"id": "toyohashi", "name": "豊橋店", "region": "愛知", "url": "https://toyohashi.kappaseitai.jp"},
+    
+    # 滋賀県
+    {"id": "kusatsu", "name": "草津店", "region": "滋賀", "url": "https://kusatsu.kappaseitai.com"},
+    
+    # 大阪府
+    {"id": "osakafukushima", "name": "ふくしま駅前店", "region": "大阪", "url": "https://osakafukushima.kappaseitai.com"},
+    {"id": "tenjinbashi", "name": "天神橋店", "region": "大阪", "url": "https://tenjinbashi.kappa-seitai.jp"},
+    
+    # 兵庫県
+    {"id": "nishiakashi", "name": "西明石店", "region": "兵庫", "url": "https://nishiakashi.kappaseitai.com"},
+    
+    # 奈良県
+    {"id": "naraoji", "name": "奈良王寺店", "region": "奈良", "url": "https://naraoji.kappaseitai.com"},
+    
+    # 広島県
+    {"id": "hiroshima", "name": "広島光町店", "region": "広島", "url": "https://hiroshima.kappaseitai.com"},
+    {"id": "hiroshimaminami", "name": "ゆめタウンみゆき店", "region": "広島", "url": "https://hiroshimaminami.kappaseitai.com"},
+    {"id": "kure", "name": "呉駅前店", "region": "広島", "url": "https://kure.kappaseitai.com"},
+    {"id": "hiroshimagion", "name": "広島祇園店", "region": "広島", "url": "https://hiroshimagion.kappaseitai.com"},
+    {"id": "hatsukaichi", "name": "ゆめタウン廿日市店", "region": "広島", "url": "https://hatsukaichi.kappaseitai.com"},
+    
+    # 福岡県
+    {"id": "otemon", "name": "福岡大手門店", "region": "福岡", "url": "https://otemon.kappaseitai.com"},
+    {"id": "kitakyushu", "name": "北九州店", "region": "福岡", "url": "https://kitakyushu.kappaseitai.com"},
+    {"id": "kurume", "name": "久留米店", "region": "福岡", "url": "https://kurume.kappaseitai.com"},
+    
+    # 熊本県
+    {"id": "nagamine", "name": "長嶺店", "region": "熊本", "url": "https://nagamine.kappaseitai.com"},
+    {"id": "kumamotoshimasaki", "name": "熊本島崎店", "region": "熊本", "url": "https://kumamotoshimasaki.kappaseitai.com"},
+    
+    # 宮崎県
+    {"id": "miyazaki", "name": "宮崎店", "region": "宮崎", "url": "https://miyazaki.kappaseitai.jp"},
+    
+    # 鹿児島県
+    {"id": "kagoshima", "name": "鹿児島店", "region": "鹿児島", "url": "https://kagoshima.kappaseitai.com"},
+    
+    # 沖縄県
+    {"id": "naha", "name": "那覇店", "region": "沖縄", "url": "https://naha.kappaseitai.com"}
 ]
 
 
@@ -53,8 +140,8 @@ def extract_campaign_data(html_content: str) -> Optional[Dict]:
         soup = BeautifulSoup(html_content, 'html.parser')
         text = soup.get_text()
         
-        # 日付を検索（例: 1月31日まで）
-        date_pattern = r'(\d+)月(\d+)日'
+        # 日付を検索（例: 1月31日、1月31日まで、○月○日迄）
+        date_pattern = r'(\d+)月(\d+)日(?:まで|迄)?'
         date_match = re.search(date_pattern, text)
         
         deadline = None
@@ -69,8 +156,8 @@ def extract_campaign_data(html_content: str) -> Optional[Dict]:
             
             deadline = f"{year}-{month:02d}-{day:02d}"
         
-        # 残り人数を検索（例: 残り3名）
-        remaining_pattern = r'残り(\d+)名'
+        # 残り人数を検索（例: 残り3名、一残り3名、あと3名）
+        remaining_pattern = r'[一ー\s]*(?:残り|あと)[\s]*(\d+)名'
         remaining_match = re.search(remaining_pattern, text)
         
         remaining = None
@@ -202,6 +289,7 @@ def main():
     save_results(results)
     
     print("\n完了！")
+
 
 if __name__ == "__main__":
     main()
