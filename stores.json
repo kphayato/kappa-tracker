@@ -404,5 +404,12 @@
     "region": "長崎",
     "url": "https://nagasaki.kappaseitai.com/",
     "active": true
+  },
+  {
+    "id": "tsukubabanpaku",
+    "name": "カッパ整体院つくば万博記念公園店",
+    "region": "茨城",
+    "url": "https://banpakupark.kappaseitai.com/",
+    "active": true
   }
 ]
