@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-11T02:55:55.523360",
+  "last_updated": "2026-04-12T03:36:19.498567",
   "total_stores": 59,
   "successful": 58,
   "stores": [
@@ -12,7 +12,7 @@
       "data": {
         "deadline": "2026-04-16",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:52:39.062658",
+        "timestamp": "2026-04-12T03:33:11.015464",
         "success": true
       },
       "status": "success"
@@ -26,7 +26,7 @@
       "data": {
         "deadline": "2026-04-14",
         "remaining": 5,
-        "timestamp": "2026-04-11T02:52:44.062568",
+        "timestamp": "2026-04-12T03:33:14.495899",
         "success": true
       },
       "status": "success"
@@ -40,7 +40,7 @@
       "data": {
         "deadline": "2026-04-18",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:52:47.757688",
+        "timestamp": "2026-04-12T03:33:17.712812",
         "success": true
       },
       "status": "success"
@@ -54,7 +54,7 @@
       "data": {
         "deadline": "2026-04-18",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:52:50.948176",
+        "timestamp": "2026-04-12T03:33:20.729126",
         "success": true
       },
       "status": "success"
@@ -68,7 +68,7 @@
       "data": {
         "deadline": "2026-04-20",
         "remaining": 7,
-        "timestamp": "2026-04-11T02:52:54.402228",
+        "timestamp": "2026-04-12T03:33:23.932198",
         "success": true
       },
       "status": "success"
@@ -82,7 +82,7 @@
       "data": {
         "deadline": "2026-04-20",
         "remaining": null,
-        "timestamp": "2026-04-11T02:52:58.173310",
+        "timestamp": "2026-04-12T03:33:27.286605",
         "success": true
       },
       "status": "success"
@@ -96,7 +96,7 @@
       "data": {
         "deadline": "2026-04-15",
         "remaining": 1,
-        "timestamp": "2026-04-11T02:53:01.327412",
+        "timestamp": "2026-04-12T03:33:30.300175",
         "success": true
       },
       "status": "success"
@@ -108,9 +108,9 @@
       "url": "https://mito.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-11",
-        "remaining": 3,
-        "timestamp": "2026-04-11T02:53:04.587243",
+        "deadline": "2026-04-18",
+        "remaining": 2,
+        "timestamp": "2026-04-12T03:33:33.304018",
         "success": true
       },
       "status": "success"
@@ -124,7 +124,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 1,
-        "timestamp": "2026-04-11T02:53:08.192507",
+        "timestamp": "2026-04-12T03:33:36.715098",
         "success": true
       },
       "status": "success"
@@ -138,7 +138,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 1,
-        "timestamp": "2026-04-11T02:53:11.352116",
+        "timestamp": "2026-04-12T03:33:39.720795",
         "success": true
       },
       "status": "success"
@@ -152,7 +152,7 @@
       "data": {
         "deadline": "2026-04-12",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:53:14.684753",
+        "timestamp": "2026-04-12T03:33:42.909712",
         "success": true
       },
       "status": "success"
@@ -166,7 +166,7 @@
       "data": {
         "deadline": "2026-04-11",
         "remaining": 5,
-        "timestamp": "2026-04-11T02:53:17.725582",
+        "timestamp": "2026-04-12T03:33:45.821957",
         "success": true
       },
       "status": "success"
@@ -180,7 +180,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:53:21.310649",
+        "timestamp": "2026-04-12T03:33:48.814377",
         "success": true
       },
       "status": "success"
@@ -194,7 +194,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 1,
-        "timestamp": "2026-04-11T02:53:24.701592",
+        "timestamp": "2026-04-12T03:33:51.996653",
         "success": true
       },
       "status": "success"
@@ -208,7 +208,7 @@
       "data": {
         "deadline": "2026-04-11",
         "remaining": null,
-        "timestamp": "2026-04-11T02:53:28.370574",
+        "timestamp": "2026-04-12T03:33:55.267764",
         "success": true
       },
       "status": "success"
@@ -222,7 +222,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 1,
-        "timestamp": "2026-04-11T02:53:31.443711",
+        "timestamp": "2026-04-12T03:33:58.440709",
         "success": true
       },
       "status": "success"
@@ -236,7 +236,7 @@
       "data": {
         "deadline": "2026-04-16",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:53:34.593187",
+        "timestamp": "2026-04-12T03:34:01.489257",
         "success": true
       },
       "status": "success"
@@ -248,9 +248,9 @@
       "url": "https://iwaki.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-11",
-        "remaining": 1,
-        "timestamp": "2026-04-11T02:53:37.739686",
+        "deadline": "2026-04-18",
+        "remaining": 2,
+        "timestamp": "2026-04-12T03:34:04.519743",
         "success": true
       },
       "status": "success"
@@ -264,7 +264,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:53:40.809783",
+        "timestamp": "2026-04-12T03:34:07.467302",
         "success": true
       },
       "status": "success"
@@ -277,8 +277,8 @@
       "active": true,
       "data": {
         "deadline": "2026-04-15",
-        "remaining": 3,
-        "timestamp": "2026-04-11T02:53:44.153243",
+        "remaining": 2,
+        "timestamp": "2026-04-12T03:34:10.614145",
         "success": true
       },
       "status": "success"
@@ -292,7 +292,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:53:47.503071",
+        "timestamp": "2026-04-12T03:34:13.771734",
         "success": true
       },
       "status": "success"
@@ -306,7 +306,7 @@
       "data": {
         "deadline": "2026-04-11",
         "remaining": 1,
-        "timestamp": "2026-04-11T02:53:50.894097",
+        "timestamp": "2026-04-12T03:34:17.014607",
         "success": true
       },
       "status": "success"
@@ -320,7 +320,7 @@
       "data": {
         "deadline": "2026-04-11",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:53:54.390746",
+        "timestamp": "2026-04-12T03:34:21.207918",
         "success": true
       },
       "status": "success"
@@ -334,7 +334,7 @@
       "data": {
         "deadline": "2026-04-14",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:53:57.698029",
+        "timestamp": "2026-04-12T03:34:24.451342",
         "success": true
       },
       "status": "success"
@@ -348,7 +348,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:54:00.762157",
+        "timestamp": "2026-04-12T03:34:27.640240",
         "success": true
       },
       "status": "success"
@@ -362,7 +362,7 @@
       "data": {
         "deadline": "2026-04-14",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:54:03.889990",
+        "timestamp": "2026-04-12T03:34:30.819076",
         "success": true
       },
       "status": "success"
@@ -374,9 +374,9 @@
       "url": "https://kumagaya.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-11",
-        "remaining": 1,
-        "timestamp": "2026-04-11T02:54:08.791435",
+        "deadline": "2026-04-18",
+        "remaining": 2,
+        "timestamp": "2026-04-12T03:34:34.003536",
         "success": true
       },
       "status": "success"
@@ -390,7 +390,7 @@
       "data": {
         "deadline": "2026-04-11",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:54:12.114470",
+        "timestamp": "2026-04-12T03:34:37.312276",
         "success": true
       },
       "status": "success"
@@ -402,9 +402,9 @@
       "url": "https://nippori.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-11",
+        "deadline": "2026-04-18",
         "remaining": 7,
-        "timestamp": "2026-04-11T02:54:15.555304",
+        "timestamp": "2026-04-12T03:34:40.599396",
         "success": true
       },
       "status": "success"
@@ -418,7 +418,7 @@
       "data": {
         "deadline": "2026-04-14",
         "remaining": 5,
-        "timestamp": "2026-04-11T02:54:18.749850",
+        "timestamp": "2026-04-12T03:34:44.810738",
         "success": true
       },
       "status": "success"
@@ -432,7 +432,7 @@
       "data": {
         "deadline": "2026-04-14",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:54:22.424257",
+        "timestamp": "2026-04-12T03:34:48.343482",
         "success": true
       },
       "status": "success"
@@ -446,7 +446,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:54:25.615192",
+        "timestamp": "2026-04-12T03:34:51.359063",
         "success": true
       },
       "status": "success"
@@ -460,7 +460,7 @@
       "data": {
         "deadline": "2026-10-19",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:54:28.935956",
+        "timestamp": "2026-04-12T03:34:54.323630",
         "success": true
       },
       "status": "success"
@@ -474,7 +474,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:54:32.203656",
+        "timestamp": "2026-04-12T03:34:57.246956",
         "success": true
       },
       "status": "success"
@@ -488,7 +488,7 @@
       "data": {
         "deadline": "2026-04-15",
         "remaining": 5,
-        "timestamp": "2026-04-11T02:54:35.627599",
+        "timestamp": "2026-04-12T03:35:00.821778",
         "success": true
       },
       "status": "success"
@@ -502,7 +502,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:54:39.026747",
+        "timestamp": "2026-04-12T03:35:03.986520",
         "success": true
       },
       "status": "success"
@@ -516,7 +516,7 @@
       "data": {
         "deadline": "2026-04-18",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:54:42.348655",
+        "timestamp": "2026-04-12T03:35:07.248032",
         "success": true
       },
       "status": "success"
@@ -530,7 +530,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:54:46.083389",
+        "timestamp": "2026-04-12T03:35:10.485600",
         "success": true
       },
       "status": "success"
@@ -553,7 +553,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:54:52.385512",
+        "timestamp": "2026-04-12T03:35:16.607976",
         "success": true
       },
       "status": "success"
@@ -565,9 +565,9 @@
       "url": "https://osakafukushima.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-12",
+        "deadline": "2026-04-15",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:54:55.443687",
+        "timestamp": "2026-04-12T03:35:19.772529",
         "success": true
       },
       "status": "success"
@@ -581,7 +581,7 @@
       "data": {
         "deadline": "2026-04-15",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:54:59.604396",
+        "timestamp": "2026-04-12T03:35:23.339890",
         "success": true
       },
       "status": "success"
@@ -595,7 +595,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 5,
-        "timestamp": "2026-04-11T02:55:02.953760",
+        "timestamp": "2026-04-12T03:35:26.596465",
         "success": true
       },
       "status": "success"
@@ -609,7 +609,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 1,
-        "timestamp": "2026-04-11T02:55:06.189949",
+        "timestamp": "2026-04-12T03:35:29.744644",
         "success": true
       },
       "status": "success"
@@ -621,9 +621,9 @@
       "url": "https://hiroshima.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-13",
-        "remaining": 2,
-        "timestamp": "2026-04-11T02:55:09.494962",
+        "deadline": "2026-04-20",
+        "remaining": 3,
+        "timestamp": "2026-04-12T03:35:32.907955",
         "success": true
       },
       "status": "success"
@@ -635,9 +635,9 @@
       "url": "https://hiroshimaminami.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-12",
+        "deadline": "2026-04-19",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:55:12.955982",
+        "timestamp": "2026-04-12T03:35:36.095399",
         "success": true
       },
       "status": "success"
@@ -649,9 +649,9 @@
       "url": "https://kure.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-12",
+        "deadline": "2026-04-19",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:55:16.138126",
+        "timestamp": "2026-04-12T03:35:39.793091",
         "success": true
       },
       "status": "success"
@@ -665,7 +665,7 @@
       "data": {
         "deadline": "2026-04-20",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:55:19.378752",
+        "timestamp": "2026-04-12T03:35:43.113345",
         "success": true
       },
       "status": "success"
@@ -677,9 +677,9 @@
       "url": "https://hatsukaichi.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-12",
-        "remaining": 2,
-        "timestamp": "2026-04-11T02:55:22.461866",
+        "deadline": "2026-04-19",
+        "remaining": 3,
+        "timestamp": "2026-04-12T03:35:46.308432",
         "success": true
       },
       "status": "success"
@@ -693,7 +693,7 @@
       "data": {
         "deadline": "2026-04-20",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:55:25.995080",
+        "timestamp": "2026-04-12T03:35:49.743628",
         "success": true
       },
       "status": "success"
@@ -707,7 +707,7 @@
       "data": {
         "deadline": "2026-04-20",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:55:29.334615",
+        "timestamp": "2026-04-12T03:35:53.137786",
         "success": true
       },
       "status": "success"
@@ -719,9 +719,9 @@
       "url": "https://kurume.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-11",
+        "deadline": "2026-04-18",
         "remaining": 2,
-        "timestamp": "2026-04-11T02:55:32.590555",
+        "timestamp": "2026-04-12T03:35:56.641670",
         "success": true
       },
       "status": "success"
@@ -733,9 +733,9 @@
       "url": "https://nagamine.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-11",
-        "remaining": 1,
-        "timestamp": "2026-04-11T02:55:36.097814",
+        "deadline": "2026-04-18",
+        "remaining": 4,
+        "timestamp": "2026-04-12T03:36:00.088709",
         "success": true
       },
       "status": "success"
@@ -749,7 +749,7 @@
       "data": {
         "deadline": "2026-04-18",
         "remaining": 5,
-        "timestamp": "2026-04-11T02:55:39.414156",
+        "timestamp": "2026-04-12T03:36:03.225056",
         "success": true
       },
       "status": "success"
@@ -763,7 +763,7 @@
       "data": {
         "deadline": "2026-04-20",
         "remaining": 4,
-        "timestamp": "2026-04-11T02:55:42.771931",
+        "timestamp": "2026-04-12T03:36:06.595825",
         "success": true
       },
       "status": "success"
@@ -777,7 +777,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 3,
-        "timestamp": "2026-04-11T02:55:46.076791",
+        "timestamp": "2026-04-12T03:36:09.762710",
         "success": true
       },
       "status": "success"
@@ -789,9 +789,9 @@
       "url": "https://naha.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-04-11",
-        "remaining": 1,
-        "timestamp": "2026-04-11T02:55:49.415312",
+        "deadline": "2026-04-15",
+        "remaining": 2,
+        "timestamp": "2026-04-12T03:36:13.032620",
         "success": true
       },
       "status": "success"
@@ -805,7 +805,7 @@
       "data": {
         "deadline": "2026-04-13",
         "remaining": 6,
-        "timestamp": "2026-04-11T02:55:52.462794",
+        "timestamp": "2026-04-12T03:36:16.340914",
         "success": true
       },
       "status": "success"
@@ -819,7 +819,7 @@
       "data": {
         "deadline": "2026-04-12",
         "remaining": 5,
-        "timestamp": "2026-04-11T02:55:55.522185",
+        "timestamp": "2026-04-12T03:36:19.497542",
         "success": true
       },
       "status": "success"
