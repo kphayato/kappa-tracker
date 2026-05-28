@@ -411,5 +411,12 @@
     "region": "茨城",
     "url": "https://banpakupark.kappaseitai.com/",
     "active": true
+  },
+  {
+    "id": "hairinzai",
+    "name": "ヘアリグ印西店",
+    "region": "千葉",
+    "url": "https://inzai.kappaseitai.com/hatsumou?gad_source=1&gad_campaignid=23707557756&gbraid=0AAAAApkuCUqHAglQ7RMp8uhPGSI3ofNov&gclid=CjwKCAjwrNrQBhBjEiwAoR4VO9Ud2Ks5EUZWnPBIzEKRfvHhtd4O5ZSQLx08HSj_jWOEA_5yxl2tyBoCUcwQAvD_BwE",
+    "active": true
   }
 ]
