@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T05:05:02.971312",
+  "last_updated": "2026-06-02T04:51:27.714388",
   "total_stores": 60,
   "successful": 59,
   "stores": [
@@ -12,7 +12,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:01:21.842304",
+        "timestamp": "2026-06-02T04:48:06.327193",
         "success": true
       },
       "status": "success"
@@ -26,7 +26,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 4,
-        "timestamp": "2026-06-01T05:01:25.487109",
+        "timestamp": "2026-06-02T04:48:09.805263",
         "success": true
       },
       "status": "success"
@@ -40,7 +40,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:01:28.899666",
+        "timestamp": "2026-06-02T04:48:13.622057",
         "success": true
       },
       "status": "success"
@@ -54,7 +54,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:01:32.359767",
+        "timestamp": "2026-06-02T04:48:17.001849",
         "success": true
       },
       "status": "success"
@@ -68,7 +68,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:01:35.840541",
+        "timestamp": "2026-06-02T04:48:20.538498",
         "success": true
       },
       "status": "success"
@@ -82,7 +82,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:01:39.706941",
+        "timestamp": "2026-06-02T04:48:24.161948",
         "success": true
       },
       "status": "success"
@@ -96,7 +96,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:01:43.208508",
+        "timestamp": "2026-06-02T04:48:27.420907",
         "success": true
       },
       "status": "success"
@@ -110,7 +110,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:01:46.723626",
+        "timestamp": "2026-06-02T04:48:30.710475",
         "success": true
       },
       "status": "success"
@@ -124,7 +124,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:01:50.123624",
+        "timestamp": "2026-06-02T04:48:34.276755",
         "success": true
       },
       "status": "success"
@@ -138,7 +138,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:01:53.520302",
+        "timestamp": "2026-06-02T04:48:37.762333",
         "success": true
       },
       "status": "success"
@@ -151,8 +151,8 @@
       "active": true,
       "data": {
         "deadline": "2026-06-05",
-        "remaining": 5,
-        "timestamp": "2026-06-01T05:01:58.095935",
+        "remaining": 4,
+        "timestamp": "2026-06-02T04:48:41.231491",
         "success": true
       },
       "status": "success"
@@ -166,7 +166,7 @@
       "data": {
         "deadline": "2026-06-06",
         "remaining": 5,
-        "timestamp": "2026-06-01T05:02:02.628037",
+        "timestamp": "2026-06-02T04:48:44.328182",
         "success": true
       },
       "status": "success"
@@ -180,7 +180,7 @@
       "data": {
         "deadline": "2026-06-08",
         "remaining": 4,
-        "timestamp": "2026-06-01T05:02:05.884968",
+        "timestamp": "2026-06-02T04:48:47.634010",
         "success": true
       },
       "status": "success"
@@ -194,7 +194,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:02:09.533257",
+        "timestamp": "2026-06-02T04:48:51.160222",
         "success": true
       },
       "status": "success"
@@ -208,7 +208,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": null,
-        "timestamp": "2026-06-01T05:02:13.211845",
+        "timestamp": "2026-06-02T04:48:54.630107",
         "success": true
       },
       "status": "success"
@@ -222,7 +222,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:02:17.574418",
+        "timestamp": "2026-06-02T04:48:57.915779",
         "success": true
       },
       "status": "success"
@@ -236,7 +236,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:02:21.544715",
+        "timestamp": "2026-06-02T04:49:01.179191",
         "success": true
       },
       "status": "success"
@@ -250,7 +250,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:02:25.941796",
+        "timestamp": "2026-06-02T04:49:04.647854",
         "success": true
       },
       "status": "success"
@@ -264,7 +264,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:02:30.593094",
+        "timestamp": "2026-06-02T04:49:08.128243",
         "success": true
       },
       "status": "success"
@@ -278,7 +278,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:02:34.071282",
+        "timestamp": "2026-06-02T04:49:11.606700",
         "success": true
       },
       "status": "success"
@@ -292,7 +292,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:02:37.695226",
+        "timestamp": "2026-06-02T04:49:15.169100",
         "success": true
       },
       "status": "success"
@@ -306,7 +306,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 1,
-        "timestamp": "2026-06-01T05:02:41.906077",
+        "timestamp": "2026-06-02T04:49:18.827755",
         "success": true
       },
       "status": "success"
@@ -320,7 +320,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:02:45.362072",
+        "timestamp": "2026-06-02T04:49:22.366330",
         "success": true
       },
       "status": "success"
@@ -334,7 +334,7 @@
       "data": {
         "deadline": "2026-06-02",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:02:48.926281",
+        "timestamp": "2026-06-02T04:49:25.832296",
         "success": true
       },
       "status": "success"
@@ -348,7 +348,7 @@
       "data": {
         "deadline": "2026-06-08",
         "remaining": 5,
-        "timestamp": "2026-06-01T05:02:53.045477",
+        "timestamp": "2026-06-02T04:49:28.936058",
         "success": true
       },
       "status": "success"
@@ -362,7 +362,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:02:57.461379",
+        "timestamp": "2026-06-02T04:49:32.088813",
         "success": true
       },
       "status": "success"
@@ -376,7 +376,7 @@
       "data": {
         "deadline": "2026-06-06",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:03:00.949101",
+        "timestamp": "2026-06-02T04:49:35.549838",
         "success": true
       },
       "status": "success"
@@ -390,7 +390,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:03:04.710281",
+        "timestamp": "2026-06-02T04:49:39.097679",
         "success": true
       },
       "status": "success"
@@ -404,7 +404,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:03:08.467229",
+        "timestamp": "2026-06-02T04:49:42.952667",
         "success": true
       },
       "status": "success"
@@ -418,7 +418,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:03:11.670323",
+        "timestamp": "2026-06-02T04:49:46.279019",
         "success": true
       },
       "status": "success"
@@ -432,7 +432,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:03:15.185186",
+        "timestamp": "2026-06-02T04:49:49.901855",
         "success": true
       },
       "status": "success"
@@ -446,7 +446,7 @@
       "data": {
         "deadline": "2026-05-02",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:03:18.903190",
+        "timestamp": "2026-06-02T04:49:53.156715",
         "success": true
       },
       "status": "success"
@@ -460,7 +460,7 @@
       "data": {
         "deadline": "2026-10-19",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:03:22.052789",
+        "timestamp": "2026-06-02T04:49:56.560541",
         "success": true
       },
       "status": "success"
@@ -474,7 +474,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:03:25.884360",
+        "timestamp": "2026-06-02T04:49:59.803023",
         "success": true
       },
       "status": "success"
@@ -488,7 +488,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:03:29.492716",
+        "timestamp": "2026-06-02T04:50:03.495199",
         "success": true
       },
       "status": "success"
@@ -502,7 +502,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:03:32.982165",
+        "timestamp": "2026-06-02T04:50:06.982381",
         "success": true
       },
       "status": "success"
@@ -516,7 +516,7 @@
       "data": {
         "deadline": "2026-06-06",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:03:36.559437",
+        "timestamp": "2026-06-02T04:50:10.418273",
         "success": true
       },
       "status": "success"
@@ -530,7 +530,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:03:39.720739",
+        "timestamp": "2026-06-02T04:50:13.655092",
         "success": true
       },
       "status": "success"
@@ -553,7 +553,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:03:46.943995",
+        "timestamp": "2026-06-02T04:50:20.032667",
         "success": true
       },
       "status": "success"
@@ -567,7 +567,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:03:51.465419",
+        "timestamp": "2026-06-02T04:50:23.131279",
         "success": true
       },
       "status": "success"
@@ -581,7 +581,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:03:56.534265",
+        "timestamp": "2026-06-02T04:50:27.153872",
         "success": true
       },
       "status": "success"
@@ -595,7 +595,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:00.097838",
+        "timestamp": "2026-06-02T04:50:30.639157",
         "success": true
       },
       "status": "success"
@@ -609,7 +609,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:04:03.311198",
+        "timestamp": "2026-06-02T04:50:33.899621",
         "success": true
       },
       "status": "success"
@@ -623,7 +623,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:07.083970",
+        "timestamp": "2026-06-02T04:50:37.301072",
         "success": true
       },
       "status": "success"
@@ -637,7 +637,7 @@
       "data": {
         "deadline": "2026-06-06",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:10.857659",
+        "timestamp": "2026-06-02T04:50:40.802014",
         "success": true
       },
       "status": "success"
@@ -651,7 +651,7 @@
       "data": {
         "deadline": "2026-06-06",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:14.793776",
+        "timestamp": "2026-06-02T04:50:44.065420",
         "success": true
       },
       "status": "success"
@@ -665,7 +665,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:18.057590",
+        "timestamp": "2026-06-02T04:50:47.308682",
         "success": true
       },
       "status": "success"
@@ -679,7 +679,7 @@
       "data": {
         "deadline": "2026-06-06",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:22.122291",
+        "timestamp": "2026-06-02T04:50:50.606016",
         "success": true
       },
       "status": "success"
@@ -693,7 +693,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:25.948232",
+        "timestamp": "2026-06-02T04:50:54.090017",
         "success": true
       },
       "status": "success"
@@ -707,7 +707,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:29.710736",
+        "timestamp": "2026-06-02T04:50:57.647905",
         "success": true
       },
       "status": "success"
@@ -721,7 +721,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:04:33.273320",
+        "timestamp": "2026-06-02T04:51:01.011773",
         "success": true
       },
       "status": "success"
@@ -735,7 +735,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 2,
-        "timestamp": "2026-06-01T05:04:36.765476",
+        "timestamp": "2026-06-02T04:51:04.409076",
         "success": true
       },
       "status": "success"
@@ -748,8 +748,8 @@
       "active": true,
       "data": {
         "deadline": "2026-06-05",
-        "remaining": 4,
-        "timestamp": "2026-06-01T05:04:40.981783",
+        "remaining": 3,
+        "timestamp": "2026-06-02T04:51:07.657644",
         "success": true
       },
       "status": "success"
@@ -763,7 +763,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:45.657654",
+        "timestamp": "2026-06-02T04:51:11.401425",
         "success": true
       },
       "status": "success"
@@ -777,7 +777,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:48.786758",
+        "timestamp": "2026-06-02T04:51:14.516077",
         "success": true
       },
       "status": "success"
@@ -791,7 +791,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:52.328267",
+        "timestamp": "2026-06-02T04:51:18.013190",
         "success": true
       },
       "status": "success"
@@ -805,7 +805,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:55.425387",
+        "timestamp": "2026-06-02T04:51:21.108676",
         "success": true
       },
       "status": "success"
@@ -819,7 +819,7 @@
       "data": {
         "deadline": "2026-06-05",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:04:59.780766",
+        "timestamp": "2026-06-02T04:51:24.459470",
         "success": true
       },
       "status": "success"
@@ -833,7 +833,7 @@
       "data": {
         "deadline": "2026-06-02",
         "remaining": 3,
-        "timestamp": "2026-06-01T05:05:02.970379",
+        "timestamp": "2026-06-02T04:51:27.713449",
         "success": true
       },
       "status": "success"
