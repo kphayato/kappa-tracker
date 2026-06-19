@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18T04:50:22.728903",
+  "last_updated": "2026-06-19T03:25:58.553046",
   "total_stores": 60,
   "successful": 59,
   "stores": [
@@ -10,9 +10,9 @@
       "url": "https://kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-22",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:47:15.717266",
+        "timestamp": "2026-06-19T03:22:33.280913",
         "success": true
       },
       "status": "success"
@@ -26,7 +26,7 @@
       "data": {
         "deadline": "2026-06-27",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:47:18.961105",
+        "timestamp": "2026-06-19T03:22:37.009927",
         "success": true
       },
       "status": "success"
@@ -38,9 +38,9 @@
       "url": "https://moriya.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 3,
-        "timestamp": "2026-06-18T04:47:22.252542",
+        "deadline": "2026-06-26",
+        "remaining": 2,
+        "timestamp": "2026-06-19T03:22:40.648282",
         "success": true
       },
       "status": "success"
@@ -52,9 +52,9 @@
       "url": "https://hitachinaka.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 2,
-        "timestamp": "2026-06-18T04:47:25.212878",
+        "deadline": "2026-06-26",
+        "remaining": 3,
+        "timestamp": "2026-06-19T03:22:44.115552",
         "success": true
       },
       "status": "success"
@@ -66,9 +66,9 @@
       "url": "https://hitachi.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:47:28.507908",
+        "timestamp": "2026-06-19T03:22:47.850155",
         "success": true
       },
       "status": "success"
@@ -80,9 +80,9 @@
       "url": "https://tsukuba.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:47:31.702292",
+        "timestamp": "2026-06-19T03:22:51.385588",
         "success": true
       },
       "status": "success"
@@ -94,9 +94,9 @@
       "url": "https://koga.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 3,
-        "timestamp": "2026-06-18T04:47:34.649662",
+        "deadline": "2026-06-26",
+        "remaining": 2,
+        "timestamp": "2026-06-19T03:22:54.727830",
         "success": true
       },
       "status": "success"
@@ -108,9 +108,9 @@
       "url": "https://mito.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 3,
-        "timestamp": "2026-06-18T04:47:37.581326",
+        "deadline": "2026-06-26",
+        "remaining": 2,
+        "timestamp": "2026-06-19T03:22:58.293419",
         "success": true
       },
       "status": "success"
@@ -124,7 +124,7 @@
       "data": {
         "deadline": "2026-06-19",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:47:40.662398",
+        "timestamp": "2026-06-19T03:23:01.856638",
         "success": true
       },
       "status": "success"
@@ -136,9 +136,9 @@
       "url": "https://sapporonishioka.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:47:43.868812",
+        "timestamp": "2026-06-19T03:23:05.139201",
         "success": true
       },
       "status": "success"
@@ -150,9 +150,9 @@
       "url": "https://higashikuyakusyo.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 1,
-        "timestamp": "2026-06-18T04:47:46.880734",
+        "deadline": "2026-06-26",
+        "remaining": 6,
+        "timestamp": "2026-06-19T03:23:08.460598",
         "success": true
       },
       "status": "success"
@@ -164,9 +164,9 @@
       "url": "https://obihiro.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 2,
-        "timestamp": "2026-06-18T04:47:49.999057",
+        "deadline": "2026-06-26",
+        "remaining": 3,
+        "timestamp": "2026-06-19T03:23:11.587095",
         "success": true
       },
       "status": "success"
@@ -178,9 +178,9 @@
       "url": "https://morioka.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:47:52.965814",
+        "timestamp": "2026-06-19T03:23:14.853869",
         "success": true
       },
       "status": "success"
@@ -192,9 +192,9 @@
       "url": "https://sendai.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 1,
-        "timestamp": "2026-06-18T04:47:56.103185",
+        "deadline": "2026-06-26",
+        "remaining": 3,
+        "timestamp": "2026-06-19T03:23:18.662397",
         "success": true
       },
       "status": "success"
@@ -206,9 +206,9 @@
       "url": "https://tomiya.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:47:59.208614",
+        "timestamp": "2026-06-19T03:23:22.364532",
         "success": true
       },
       "status": "success"
@@ -220,9 +220,9 @@
       "url": "https://dainohara.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 2,
-        "timestamp": "2026-06-18T04:48:02.390925",
+        "deadline": "2026-06-26",
+        "remaining": 3,
+        "timestamp": "2026-06-19T03:23:26.010867",
         "success": true
       },
       "status": "success"
@@ -234,9 +234,9 @@
       "url": "https://koriyama.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:48:05.242796",
+        "timestamp": "2026-06-19T03:23:29.261081",
         "success": true
       },
       "status": "success"
@@ -248,9 +248,9 @@
       "url": "https://iwaki.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:48:08.206651",
+        "timestamp": "2026-06-19T03:23:32.520389",
         "success": true
       },
       "status": "success"
@@ -262,9 +262,9 @@
       "url": "https://fukushima.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 3,
-        "timestamp": "2026-06-18T04:48:11.344293",
+        "deadline": "2026-06-26",
+        "remaining": 2,
+        "timestamp": "2026-06-19T03:23:35.662963",
         "success": true
       },
       "status": "success"
@@ -276,9 +276,9 @@
       "url": "https://tochigi.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 2,
-        "timestamp": "2026-06-18T04:48:14.501887",
+        "deadline": "2026-06-26",
+        "remaining": 3,
+        "timestamp": "2026-06-19T03:23:39.139836",
         "success": true
       },
       "status": "success"
@@ -290,9 +290,9 @@
       "url": "https://utsunomiya.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 2,
-        "timestamp": "2026-06-18T04:48:17.589137",
+        "deadline": "2026-06-26",
+        "remaining": 3,
+        "timestamp": "2026-06-19T03:23:42.702835",
         "success": true
       },
       "status": "success"
@@ -304,9 +304,9 @@
       "url": "https://oyama.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:48:20.694024",
+        "timestamp": "2026-06-19T03:23:46.306244",
         "success": true
       },
       "status": "success"
@@ -318,9 +318,9 @@
       "url": "https://ichikawa.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:48:23.809675",
+        "timestamp": "2026-06-19T03:23:50.069632",
         "success": true
       },
       "status": "success"
@@ -332,9 +332,9 @@
       "url": "https://inzai.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:48:27.234010",
+        "timestamp": "2026-06-19T03:23:53.586618",
         "success": true
       },
       "status": "success"
@@ -346,9 +346,9 @@
       "url": "https://kisarazu.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:48:30.091870",
+        "timestamp": "2026-06-19T03:23:56.943568",
         "success": true
       },
       "status": "success"
@@ -360,9 +360,9 @@
       "url": "https://matsudomabashi.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 2,
-        "timestamp": "2026-06-18T04:48:32.944341",
+        "deadline": "2026-06-26",
+        "remaining": 3,
+        "timestamp": "2026-06-19T03:24:00.393023",
         "success": true
       },
       "status": "success"
@@ -376,7 +376,7 @@
       "data": {
         "deadline": "2026-06-20",
         "remaining": 1,
-        "timestamp": "2026-06-18T04:48:36.068366",
+        "timestamp": "2026-06-19T03:24:03.909317",
         "success": true
       },
       "status": "success"
@@ -390,7 +390,7 @@
       "data": {
         "deadline": "2026-06-19",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:48:43.076278",
+        "timestamp": "2026-06-19T03:24:07.761586",
         "success": true
       },
       "status": "success"
@@ -402,9 +402,9 @@
       "url": "https://nippori.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:48:46.269113",
+        "timestamp": "2026-06-19T03:24:11.254770",
         "success": true
       },
       "status": "success"
@@ -416,9 +416,9 @@
       "url": "https://ikuta.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:48:49.181066",
+        "timestamp": "2026-06-19T03:24:14.497440",
         "success": true
       },
       "status": "success"
@@ -430,9 +430,9 @@
       "url": "https://odawara.kappaseitai.jp",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:48:52.534011",
+        "timestamp": "2026-06-19T03:24:18.373022",
         "success": true
       },
       "status": "success"
@@ -444,9 +444,9 @@
       "url": "https://matsumoto.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:48:55.556309",
+        "timestamp": "2026-06-19T03:24:21.626664",
         "success": true
       },
       "status": "success"
@@ -458,9 +458,9 @@
       "url": "https://nagano.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:48:58.688867",
+        "timestamp": "2026-06-19T03:24:24.779717",
         "success": true
       },
       "status": "success"
@@ -472,9 +472,9 @@
       "url": "https://takaoka.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 2,
-        "timestamp": "2026-06-18T04:49:01.776721",
+        "deadline": "2026-06-26",
+        "remaining": null,
+        "timestamp": "2026-06-19T03:24:28.307771",
         "success": true
       },
       "status": "success"
@@ -488,7 +488,7 @@
       "data": {
         "deadline": "2026-06-19",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:49:05.409861",
+        "timestamp": "2026-06-19T03:24:32.031957",
         "success": true
       },
       "status": "success"
@@ -500,9 +500,9 @@
       "url": "https://nonoichi.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:49:08.543793",
+        "timestamp": "2026-06-19T03:24:35.557082",
         "success": true
       },
       "status": "success"
@@ -514,9 +514,9 @@
       "url": "https://kanazawa.kappaseitai.jp",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 3,
-        "timestamp": "2026-06-18T04:49:11.707838",
+        "deadline": "2026-06-26",
+        "remaining": 2,
+        "timestamp": "2026-06-19T03:24:39.294198",
         "success": true
       },
       "status": "success"
@@ -528,9 +528,9 @@
       "url": "https://owariasahi.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
-        "remaining": 2,
-        "timestamp": "2026-06-18T04:49:14.761899",
+        "deadline": "2026-06-26",
+        "remaining": 3,
+        "timestamp": "2026-06-19T03:24:42.535428",
         "success": true
       },
       "status": "success"
@@ -551,9 +551,9 @@
       "url": "https://kusatsu.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:49:21.246667",
+        "timestamp": "2026-06-19T03:24:49.121257",
         "success": true
       },
       "status": "success"
@@ -565,9 +565,9 @@
       "url": "https://osakafukushima.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:49:24.364380",
+        "timestamp": "2026-06-19T03:24:52.230509",
         "success": true
       },
       "status": "success"
@@ -579,9 +579,9 @@
       "url": "https://tenjinbashi.kappa-seitai.jp",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:49:27.732614",
+        "timestamp": "2026-06-19T03:24:56.460006",
         "success": true
       },
       "status": "success"
@@ -593,9 +593,9 @@
       "url": "https://nishiakashi.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:49:30.805079",
+        "timestamp": "2026-06-19T03:24:59.883638",
         "success": true
       },
       "status": "success"
@@ -607,9 +607,9 @@
       "url": "https://naraoji.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:49:33.717366",
+        "timestamp": "2026-06-19T03:25:03.143694",
         "success": true
       },
       "status": "success"
@@ -621,9 +621,9 @@
       "url": "https://hiroshima.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:49:36.915832",
+        "timestamp": "2026-06-19T03:25:06.544128",
         "success": true
       },
       "status": "success"
@@ -637,7 +637,7 @@
       "data": {
         "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:49:40.074921",
+        "timestamp": "2026-06-19T03:25:10.063543",
         "success": true
       },
       "status": "success"
@@ -651,7 +651,7 @@
       "data": {
         "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:49:43.018674",
+        "timestamp": "2026-06-19T03:25:13.319534",
         "success": true
       },
       "status": "success"
@@ -663,9 +663,9 @@
       "url": "https://hiroshimagion.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:49:46.096656",
+        "timestamp": "2026-06-19T03:25:16.564646",
         "success": true
       },
       "status": "success"
@@ -679,7 +679,7 @@
       "data": {
         "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:49:49.023148",
+        "timestamp": "2026-06-19T03:25:19.806991",
         "success": true
       },
       "status": "success"
@@ -691,9 +691,9 @@
       "url": "https://otemon.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-21",
-        "remaining": 2,
-        "timestamp": "2026-06-18T04:49:52.255614",
+        "deadline": "2026-06-26",
+        "remaining": 3,
+        "timestamp": "2026-06-19T03:25:23.227485",
         "success": true
       },
       "status": "success"
@@ -705,9 +705,9 @@
       "url": "https://kitakyushu.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:49:55.449629",
+        "timestamp": "2026-06-19T03:25:26.717247",
         "success": true
       },
       "status": "success"
@@ -719,9 +719,9 @@
       "url": "https://kurume.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:49:58.566593",
+        "timestamp": "2026-06-19T03:25:30.167432",
         "success": true
       },
       "status": "success"
@@ -735,7 +735,7 @@
       "data": {
         "deadline": "2026-06-19",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:50:01.790302",
+        "timestamp": "2026-06-19T03:25:33.648255",
         "success": true
       },
       "status": "success"
@@ -749,7 +749,7 @@
       "data": {
         "deadline": "2026-06-19",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:50:04.716556",
+        "timestamp": "2026-06-19T03:25:36.894384",
         "success": true
       },
       "status": "success"
@@ -761,9 +761,9 @@
       "url": "https://miyazaki.kappaseitai.jp",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:50:07.890783",
+        "timestamp": "2026-06-19T03:25:40.310607",
         "success": true
       },
       "status": "success"
@@ -775,9 +775,9 @@
       "url": "https://kagoshima.kappaseitai.com",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:50:10.752851",
+        "timestamp": "2026-06-19T03:25:43.654154",
         "success": true
       },
       "status": "success"
@@ -791,7 +791,7 @@
       "data": {
         "deadline": "2026-06-19",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:50:13.838942",
+        "timestamp": "2026-06-19T03:25:47.103631",
         "success": true
       },
       "status": "success"
@@ -803,9 +803,9 @@
       "url": "https://nagasaki.kappaseitai.com/",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:50:16.686319",
+        "timestamp": "2026-06-19T03:25:50.217634",
         "success": true
       },
       "status": "success"
@@ -817,9 +817,9 @@
       "url": "https://banpakupark.kappaseitai.com/",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 2,
-        "timestamp": "2026-06-18T04:50:19.794334",
+        "timestamp": "2026-06-19T03:25:53.330652",
         "success": true
       },
       "status": "success"
@@ -831,9 +831,9 @@
       "url": "https://inzai.kappaseitai.com/hatsumou?gad_source=1&gad_campaignid=23707557756&gbraid=0AAAAApkuCUqHAglQ7RMp8uhPGSI3ofNov&gclid=CjwKCAjwrNrQBhBjEiwAoR4VO9Ud2Ks5EUZWnPBIzEKRfvHhtd4O5ZSQLx08HSj_jWOEA_5yxl2tyBoCUcwQAvD_BwE",
       "active": true,
       "data": {
-        "deadline": "2026-06-19",
+        "deadline": "2026-06-26",
         "remaining": 3,
-        "timestamp": "2026-06-18T04:50:22.728154",
+        "timestamp": "2026-06-19T03:25:58.552184",
         "success": true
       },
       "status": "success"
