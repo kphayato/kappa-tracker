@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-11-27T07:58:49.250827",
+  "last_updated": "2026-11-28T07:37:26.838816",
   "total_stores": 61,
-  "successful": 60,
+  "successful": 0,
   "stores": [
     {
       "id": "ushiku",
@@ -9,13 +9,9 @@
       "region": "茨城",
       "url": "https://kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:55:24.572071",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='kappaseitai.com', port=443): Failed to resolve 'kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "tsuchiura",
@@ -23,13 +19,9 @@
       "region": "茨城",
       "url": "https://tsuchiura.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 7,
-        "timestamp": "2026-11-27T07:55:28.034000",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='tsuchiura.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='tsuchiura.kappaseitai.com', port=443): Failed to resolve 'tsuchiura.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "moriya",
@@ -37,13 +29,9 @@
       "region": "茨城",
       "url": "https://moriya.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:55:31.605910",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='moriya.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='moriya.kappaseitai.com', port=443): Failed to resolve 'moriya.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "hitachinaka",
@@ -51,13 +39,9 @@
       "region": "茨城",
       "url": "https://hitachinaka.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:55:34.962570",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='hitachinaka.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='hitachinaka.kappaseitai.com', port=443): Failed to resolve 'hitachinaka.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "hitachi",
@@ -65,13 +49,9 @@
       "region": "茨城",
       "url": "https://hitachi.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:55:38.423251",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='hitachi.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='hitachi.kappaseitai.com', port=443): Failed to resolve 'hitachi.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "tsukuba",
@@ -79,13 +59,9 @@
       "region": "茨城",
       "url": "https://tsukuba.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:55:42.281674",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='tsukuba.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='tsukuba.kappaseitai.com', port=443): Failed to resolve 'tsukuba.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "koga",
@@ -93,13 +69,9 @@
       "region": "茨城",
       "url": "https://koga.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:55:45.572203",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='koga.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='koga.kappaseitai.com', port=443): Failed to resolve 'koga.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "mito",
@@ -107,13 +79,9 @@
       "region": "茨城",
       "url": "https://mito.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:55:48.926628",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='mito.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='mito.kappaseitai.com', port=443): Failed to resolve 'mito.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "asahikawa",
@@ -121,13 +89,9 @@
       "region": "北海道",
       "url": "https://asahikawa.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:55:52.377473",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='asahikawa.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='asahikawa.kappaseitai.com', port=443): Failed to resolve 'asahikawa.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "sapporonishioka",
@@ -135,13 +99,9 @@
       "region": "北海道",
       "url": "https://sapporonishioka.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-11-27",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:55:55.556863",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='sapporonishioka.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sapporonishioka.kappaseitai.com', port=443): Failed to resolve 'sapporonishioka.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "higashikuyakusyo",
@@ -149,13 +109,9 @@
       "region": "北海道",
       "url": "https://higashikuyakusyo.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 6,
-        "timestamp": "2026-11-27T07:55:58.831344",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='higashikuyakusyo.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='higashikuyakusyo.kappaseitai.com', port=443): Failed to resolve 'higashikuyakusyo.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "obihiro",
@@ -163,13 +119,9 @@
       "region": "北海道",
       "url": "https://obihiro.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 5,
-        "timestamp": "2026-11-27T07:56:02.299686",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='obihiro.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='obihiro.kappaseitai.com', port=443): Failed to resolve 'obihiro.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "morioka",
@@ -177,13 +129,9 @@
       "region": "岩手",
       "url": "https://morioka.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 9,
-        "timestamp": "2026-11-27T07:56:05.474246",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='morioka.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='morioka.kappaseitai.com', port=443): Failed to resolve 'morioka.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "sendai",
@@ -191,13 +139,9 @@
       "region": "宮城",
       "url": "https://sendai.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:56:08.817882",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='sendai.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='sendai.kappaseitai.com', port=443): Failed to resolve 'sendai.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "tomiya",
@@ -205,13 +149,9 @@
       "region": "宮城",
       "url": "https://tomiya.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:56:12.256451",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='tomiya.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='tomiya.kappaseitai.com', port=443): Failed to resolve 'tomiya.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "dainohara",
@@ -219,13 +159,9 @@
       "region": "宮城",
       "url": "https://dainohara.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:56:15.320914",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='dainohara.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='dainohara.kappaseitai.com', port=443): Failed to resolve 'dainohara.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "koriyama",
@@ -233,13 +169,9 @@
       "region": "福島",
       "url": "https://koriyama.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:56:18.674274",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='koriyama.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='koriyama.kappaseitai.com', port=443): Failed to resolve 'koriyama.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "iwaki",
@@ -247,13 +179,9 @@
       "region": "福島",
       "url": "https://iwaki.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:56:21.577642",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='iwaki.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='iwaki.kappaseitai.com', port=443): Failed to resolve 'iwaki.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "fukushima",
@@ -261,13 +189,9 @@
       "region": "福島",
       "url": "https://fukushima.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:56:24.920614",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='fukushima.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='fukushima.kappaseitai.com', port=443): Failed to resolve 'fukushima.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "tochigi",
@@ -275,13 +199,9 @@
       "region": "栃木",
       "url": "https://tochigi.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-05",
-        "remaining": 5,
-        "timestamp": "2026-11-27T07:56:28.403390",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='tochigi.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='tochigi.kappaseitai.com', port=443): Failed to resolve 'tochigi.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "utsunomiya",
@@ -289,13 +209,9 @@
       "region": "栃木",
       "url": "https://utsunomiya.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:56:31.752651",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='utsunomiya.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='utsunomiya.kappaseitai.com', port=443): Failed to resolve 'utsunomiya.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "oyama",
@@ -303,13 +219,9 @@
       "region": "栃木",
       "url": "https://oyama.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-11-20",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:56:35.131007",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='oyama.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='oyama.kappaseitai.com', port=443): Failed to resolve 'oyama.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "ichikawa",
@@ -317,13 +229,9 @@
       "region": "千葉",
       "url": "https://ichikawa.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:56:38.744160",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='ichikawa.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='ichikawa.kappaseitai.com', port=443): Failed to resolve 'ichikawa.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "inzai",
@@ -331,13 +239,9 @@
       "region": "千葉",
       "url": "https://inzai.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-01",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:56:42.416956",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='inzai.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='inzai.kappaseitai.com', port=443): Failed to resolve 'inzai.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "kisarazu",
@@ -345,13 +249,9 @@
       "region": "千葉",
       "url": "https://kisarazu.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:56:45.953504",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='kisarazu.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='kisarazu.kappaseitai.com', port=443): Failed to resolve 'kisarazu.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "matsudomabashi",
@@ -359,13 +259,9 @@
       "region": "千葉",
       "url": "https://matsudomabashi.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:56:49.195127",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='matsudomabashi.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='matsudomabashi.kappaseitai.com', port=443): Failed to resolve 'matsudomabashi.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "kumagaya",
@@ -373,13 +269,9 @@
       "region": "埼玉",
       "url": "https://kumagaya.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-11-29",
-        "remaining": 1,
-        "timestamp": "2026-11-27T07:56:52.941077",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='kumagaya.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='kumagaya.kappaseitai.com', port=443): Failed to resolve 'kumagaya.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "azabu10ban",
@@ -387,13 +279,9 @@
       "region": "東京",
       "url": "https://azabu10ban.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:56:56.510037",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='azabu10ban.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='azabu10ban.kappaseitai.com', port=443): Failed to resolve 'azabu10ban.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "nippori",
@@ -401,13 +289,9 @@
       "region": "東京",
       "url": "https://nippori.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:56:59.882205",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='nippori.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='nippori.kappaseitai.com', port=443): Failed to resolve 'nippori.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "ikuta",
@@ -415,13 +299,9 @@
       "region": "神奈川",
       "url": "https://ikuta.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:57:03.049878",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='ikuta.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='ikuta.kappaseitai.com', port=443): Failed to resolve 'ikuta.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "odawara",
@@ -429,13 +309,9 @@
       "region": "神奈川",
       "url": "https://odawara.kappaseitai.jp",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:57:06.964319",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='odawara.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='odawara.kappaseitai.com', port=443): Failed to resolve 'odawara.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "matsumoto",
@@ -443,13 +319,9 @@
       "region": "長野",
       "url": "https://matsumoto.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:57:10.133036",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='matsumoto.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='matsumoto.kappaseitai.com', port=443): Failed to resolve 'matsumoto.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "nagano",
@@ -457,13 +329,9 @@
       "region": "長野",
       "url": "https://nagano.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:57:13.368379",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='nagano.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='nagano.kappaseitai.com', port=443): Failed to resolve 'nagano.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "takaoka",
@@ -471,13 +339,9 @@
       "region": "富山",
       "url": "https://takaoka.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:57:16.954667",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='takaoka.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='takaoka.kappaseitai.com', port=443): Failed to resolve 'takaoka.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "toyama",
@@ -485,13 +349,9 @@
       "region": "富山",
       "url": "https://toyama.kappaseitai.jp",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:57:20.598500",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='toyama.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='toyama.kappaseitai.com', port=443): Failed to resolve 'toyama.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "nonoichi",
@@ -499,13 +359,9 @@
       "region": "石川",
       "url": "https://nonoichi.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:57:23.994165",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='nonoichi.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='nonoichi.kappaseitai.com', port=443): Failed to resolve 'nonoichi.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "kanazawa",
@@ -513,13 +369,9 @@
       "region": "石川",
       "url": "https://kanazawa.kappaseitai.jp",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:57:27.428733",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='kanazawa.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='kanazawa.kappaseitai.com', port=443): Failed to resolve 'kanazawa.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "owariasahi",
@@ -527,13 +379,9 @@
       "region": "愛知",
       "url": "https://owariasahi.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:57:30.652134",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='owariasahi.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='owariasahi.kappaseitai.com', port=443): Failed to resolve 'owariasahi.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "toyohashi",
@@ -550,13 +398,9 @@
       "region": "滋賀",
       "url": "https://kusatsu.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:57:37.304300",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='kusatsu.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='kusatsu.kappaseitai.com', port=443): Failed to resolve 'kusatsu.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "osakafukushima",
@@ -564,13 +408,9 @@
       "region": "大阪",
       "url": "https://osakafukushima.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:57:40.611548",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='osakafukushima.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='osakafukushima.kappaseitai.com', port=443): Failed to resolve 'osakafukushima.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "tenjinbashi",
@@ -578,13 +418,9 @@
       "region": "大阪",
       "url": "https://tenjinbashi.kappa-seitai.jp",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:57:44.537771",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='tenjinbashi.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='tenjinbashi.kappaseitai.com', port=443): Failed to resolve 'tenjinbashi.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "nishiakashi",
@@ -592,13 +428,9 @@
       "region": "兵庫",
       "url": "https://nishiakashi.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:57:48.042473",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='nishiakashi.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='nishiakashi.kappaseitai.com', port=443): Failed to resolve 'nishiakashi.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "naraoji",
@@ -606,13 +438,9 @@
       "region": "奈良",
       "url": "https://naraoji.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:57:51.268804",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='naraoji.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='naraoji.kappaseitai.com', port=443): Failed to resolve 'naraoji.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "hiroshima",
@@ -620,13 +448,9 @@
       "region": "広島",
       "url": "https://hiroshima.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:57:54.663229",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='hiroshima.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='hiroshima.kappaseitai.com', port=443): Failed to resolve 'hiroshima.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "hiroshimaminami",
@@ -634,13 +458,9 @@
       "region": "広島",
       "url": "https://hiroshimaminami.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:57:58.068070",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='hiroshimaminami.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='hiroshimaminami.kappaseitai.com', port=443): Failed to resolve 'hiroshimaminami.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "kure",
@@ -648,13 +468,9 @@
       "region": "広島",
       "url": "https://kure.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:01.221969",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='kure.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='kure.kappaseitai.com', port=443): Failed to resolve 'kure.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "hiroshimagion",
@@ -662,13 +478,9 @@
       "region": "広島",
       "url": "https://hiroshimagion.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:04.422103",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='hiroshimagion.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='hiroshimagion.kappaseitai.com', port=443): Failed to resolve 'hiroshimagion.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "hatsukaichi",
@@ -676,13 +488,9 @@
       "region": "広島",
       "url": "https://hatsukaichi.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:07.609666",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='hatsukaichi.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='hatsukaichi.kappaseitai.com', port=443): Failed to resolve 'hatsukaichi.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "otemon",
@@ -690,13 +498,9 @@
       "region": "福岡",
       "url": "https://otemon.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 4,
-        "timestamp": "2026-11-27T07:58:11.014751",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='otemon.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='otemon.kappaseitai.com', port=443): Failed to resolve 'otemon.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "kitakyushu",
@@ -704,13 +508,9 @@
       "region": "福岡",
       "url": "https://kitakyushu.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:14.440870",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='kitakyushu.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='kitakyushu.kappaseitai.com', port=443): Failed to resolve 'kitakyushu.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "kurume",
@@ -718,13 +518,9 @@
       "region": "福岡",
       "url": "https://kurume.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 2,
-        "timestamp": "2026-11-27T07:58:18.026008",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='kurume.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='kurume.kappaseitai.com', port=443): Failed to resolve 'kurume.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "nagamine",
@@ -732,13 +528,9 @@
       "region": "熊本",
       "url": "https://nagamine.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:21.576867",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='nagamine.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='nagamine.kappaseitai.com', port=443): Failed to resolve 'nagamine.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "kumamotoshimasaki",
@@ -746,13 +538,9 @@
       "region": "熊本",
       "url": "https://kumamotoshimasaki.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:25.751339",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='kumamotoshimasaki.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='kumamotoshimasaki.kappaseitai.com', port=443): Failed to resolve 'kumamotoshimasaki.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "miyazaki",
@@ -760,13 +548,9 @@
       "region": "宮崎",
       "url": "https://miyazaki.kappaseitai.jp",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:29.508394",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='miyazaki.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='miyazaki.kappaseitai.com', port=443): Failed to resolve 'miyazaki.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "kagoshima",
@@ -774,13 +558,9 @@
       "region": "鹿児島",
       "url": "https://kagoshima.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:32.753953",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='kagoshima.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='kagoshima.kappaseitai.com', port=443): Failed to resolve 'kagoshima.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "naha",
@@ -788,13 +568,9 @@
       "region": "沖縄",
       "url": "https://naha.kappaseitai.com",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:36.618721",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='naha.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='naha.kappaseitai.com', port=443): Failed to resolve 'naha.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "nagasaki",
@@ -802,13 +578,9 @@
       "region": "長崎",
       "url": "https://nagasaki.kappaseitai.com/",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:39.900238",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='nagasaki.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='nagasaki.kappaseitai.com', port=443): Failed to resolve 'nagasaki.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "tsukubabanpaku",
@@ -816,13 +588,9 @@
       "region": "茨城",
       "url": "https://banpakupark.kappaseitai.com/",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:43.186062",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='banpakupark.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='banpakupark.kappaseitai.com', port=443): Failed to resolve 'banpakupark.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "hairinzai",
@@ -830,13 +598,9 @@
       "region": "千葉",
       "url": "https://inzai.kappaseitai.com/hatsumou?gad_source=1&gad_campaignid=23707557756&gbraid=0AAAAApkuCUqHAglQ7RMp8uhPGSI3ofNov&gclid=CjwKCAjwrNrQBhBjEiwAoR4VO9Ud2Ks5EUZWnPBIzEKRfvHhtd4O5ZSQLx08HSj_jWOEA_5yxl2tyBoCUcwQAvD_BwE",
       "active": true,
-      "data": {
-        "deadline": "2026-12-01",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:46.135057",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='inzai.kappaseitai.com', port=443): Max retries exceeded with url: /hatsumou?gad_source=1&gad_campaignid=23707557756&gbraid=0AAAAApkuCUqHAglQ7RMp8uhPGSI3ofNov&gclid=CjwKCAjwrNrQBhBjEiwAoR4VO9Ud2Ks5EUZWnPBIzEKRfvHhtd4O5ZSQLx08HSj_jWOEA_5yxl2tyBoCUcwQAvD_BwE (Caused by NameResolutionError(\"HTTPSConnection(host='inzai.kappaseitai.com', port=443): Failed to resolve 'inzai.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     },
     {
       "id": "nagamachi",
@@ -844,13 +608,9 @@
       "region": "宮城県",
       "url": "https://nagamachi.kappaseitai.com/",
       "active": true,
-      "data": {
-        "deadline": "2026-12-04",
-        "remaining": 3,
-        "timestamp": "2026-11-27T07:58:49.250098",
-        "success": true
-      },
-      "status": "success"
+      "data": null,
+      "status": "error",
+      "error": "HTTPSConnectionPool(host='nagamachi.kappaseitai.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='nagamachi.kappaseitai.com', port=443): Failed to resolve 'nagamachi.kappaseitai.com' ([Errno -3] Temporary failure in name resolution)\"))"
     }
   ]
 }
